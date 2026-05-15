@@ -938,14 +938,14 @@ const resources = [
     resourceFeatures: ["Slides", "Role-play"]
   }),
   resource(topicId("speaking-topics", "Food, Drinks & Restaurants", "Ordering in a Restaurant"), {
-    type: "External Website",
+    type: "ESL Listening Website",
     title: "Restaurant English Resource Search",
     url: "https://learnenglish.britishcouncil.org/search?keyword=restaurant",
     source: "British Council Search",
     level: "A1-A2",
     notes: "External search page for restaurant-related listening and vocabulary resources.",
     isLocal: false,
-    priority: "Supplement",
+    priority: "Primary",
     resourceFeatures: ["Audio", "Exercises"]
   }),
   resource(topicId("speaking-topics", "Food, Drinks & Restaurants", "Ordering in a Restaurant"), {
@@ -1127,7 +1127,7 @@ const resources = [
   resource(topicId("listening-courses", "Daily Life Listening", "Self-introduction Listening"), {
     type: "ESL Listening Website",
     title: "British Council LearnEnglish: Meeting other students",
-    url: "https://learnenglish.britishcouncil.org/skills/listening/a1-listening/meeting-other-students",
+    url: "https://learnenglish.britishcouncil.org/free-resources/listening/a1/meeting-other-students",
     source: "British Council LearnEnglish",
     level: "A1",
     notes: "Primary beginner listening page with audio, transcript support, and exercises.",
@@ -1137,36 +1137,69 @@ const resources = [
   }),
   resource(topicId("listening-courses", "Daily Life Listening", "Self-introduction Listening"), {
     type: "ESL Listening Website",
+    title: "Randall's ESL Cyber Listening Lab: Introductions",
+    url: "https://www.esl-lab.com/basic-english/introductions/",
+    source: "Randall's ESL Cyber Listening Lab",
+    level: "A1-A2",
+    notes: "Basic introduction listening page with audio, quiz support, and a script section.",
+    isLocal: false,
+    resourceFeatures: ["Pre-listening", "Audio", "Quiz", "Script"],
+    priority: "Primary"
+  }),
+  resource(topicId("listening-courses", "Daily Life Listening", "Self-introduction Listening"), {
+    type: "ESL Listening Website",
     title: "ELLLO main listening library",
     url: "https://elllo.org/",
     source: "ELLLO",
     level: "A1-A2",
-    notes: "Large ESL listening library with short learner-friendly audio and video entries.",
+    notes: "Large ESL listening library for finding additional short introduction and personal-information listening texts.",
     isLocal: false,
-    resourceFeatures: ["Audio", "Video", "Transcript", "Vocabulary", "Interactive Quiz"],
+    priority: "Primary",
+    resourceFeatures: ["Audio", "Video", "Transcript", "Vocabulary", "Interactive Quiz"]
+  }),
+  resource(topicId("listening-courses", "Daily Life Listening", "Self-introduction Listening"), {
+    type: "ESL Listening Website",
+    title: "British Council LearnEnglish: Meeting people at a dinner",
+    url: "https://learnenglish.britishcouncil.org/free-resources/listening/a1/meeting-people-dinner",
+    source: "British Council LearnEnglish",
+    level: "A1",
+    notes: "Introductory social-listening page with audio, transcript, and comprehension tasks.",
+    isLocal: false,
+    resourceFeatures: ["Audio", "Transcript", "Exercises"],
     priority: "Primary"
   }),
-  resource(topicId("listening-courses", "Daily Life Listening", "Self-introduction Listening"), {
-    type: "Transcript",
-    title: "Self-introduction Transcript Notes",
-    url: "/resources/listening/self-introduction-transcript-notes.docx",
-    source: "Local Placeholder",
+  resource(topicId("listening-courses", "Daily Life Listening", "Daily Routine Listening"), {
+    type: "ESL Listening Website",
+    title: "Randall's ESL Cyber Listening Lab: Daily Schedule",
+    url: "https://www.esl-lab.com/easy/daily-schedule/",
+    source: "Randall's ESL Cyber Listening Lab",
     level: "A1-A2",
-    notes: "Editable transcript notes for collecting useful lines from primary listening pages.",
-    isLocal: true,
-    downloadable: true,
-    resourceFeatures: ["Transcript", "Teacher Notes"]
+    notes: "Daily schedule listening activity with audio, quiz, script, and vocabulary support.",
+    isLocal: false,
+    resourceFeatures: ["Pre-listening", "Audio", "Quiz", "Transcript", "Vocabulary"],
+    priority: "Primary"
   }),
-  resource(topicId("listening-courses", "Daily Life Listening", "Self-introduction Listening"), {
-    type: "Listening Questions",
-    title: "Self-introduction Listening Questions",
-    url: "/resources/listening/self-introduction-listening-questions.pdf",
-    source: "Local Placeholder",
+  resource(topicId("listening-courses", "Daily Life Listening", "Daily Routine Listening"), {
+    type: "ESL Listening Website",
+    title: "Randall's ESL Cyber Listening Lab: School Schedule",
+    url: "https://www.esl-lab.com/basic-english/school-schedule/",
+    source: "Randall's ESL Cyber Listening Lab",
     level: "A1-A2",
-    notes: "Printable question sheet placeholder for gist and detail listening checks.",
-    isLocal: true,
-    downloadable: true,
-    resourceFeatures: ["Questions", "Printable"]
+    notes: "Basic daily schedule listening page for school, transport, and evening routine details.",
+    isLocal: false,
+    resourceFeatures: ["Pre-listening", "Audio", "Quiz", "Script"],
+    priority: "Primary"
+  }),
+  resource(topicId("listening-courses", "Daily Life Listening", "Daily Routine Listening"), {
+    type: "ESL Listening Website",
+    title: "LearnEnglish Teens: Study tips",
+    url: "https://learnenglishteens.britishcouncil.org/skills/listening/a1-listening/study-tips",
+    source: "British Council LearnEnglish Teens",
+    level: "A1",
+    notes: "A1 listening page with audio, transcript, exercises, and vocabulary checks around study habits.",
+    isLocal: false,
+    resourceFeatures: ["Audio", "Transcript", "Exercises", "Vocabulary"],
+    priority: "Primary"
   }),
   resource(topicId("listening-courses", "Daily Life Listening", "Restaurant Conversation Listening"), {
     type: "ESL Listening Website",
@@ -1175,6 +1208,17 @@ const resources = [
     source: "British Council LearnEnglish",
     level: "A1",
     notes: "Primary cafe-ordering listening page with audio, transcript support, and exercises.",
+    isLocal: false,
+    resourceFeatures: ["Audio", "Transcript", "Exercises"],
+    priority: "Primary"
+  }),
+  resource(topicId("listening-courses", "Daily Life Listening", "Restaurant Conversation Listening"), {
+    type: "ESL Listening Website",
+    title: "British Council LearnEnglish: Booking a table",
+    url: "https://learnenglish.britishcouncil.org/free-resources/listening/a1/booking-table",
+    source: "British Council LearnEnglish",
+    level: "A1",
+    notes: "Restaurant booking listening page with audio, transcript, and comprehension exercises.",
     isLocal: false,
     resourceFeatures: ["Audio", "Transcript", "Exercises"],
     priority: "Primary"
@@ -1191,26 +1235,180 @@ const resources = [
     priority: "Primary"
   }),
   resource(topicId("listening-courses", "Daily Life Listening", "Restaurant Conversation Listening"), {
-    type: "Script",
-    title: "Restaurant Script Organizer",
-    url: "/resources/listening/restaurant-script-organizer.docx",
-    source: "Local Placeholder",
+    type: "ESL Listening Website",
+    title: "Randall's ESL Cyber Listening Lab: Restaurant Order",
+    url: "https://www.esl-lab.com/easy/restaurant-order/",
+    source: "Randall's ESL Cyber Listening Lab",
     level: "A1-A2",
-    notes: "Editable script organizer for collecting useful restaurant listening lines.",
-    isLocal: true,
-    downloadable: true,
-    resourceFeatures: ["Script", "Editable"]
+    notes: "Easy restaurant-order listening page with audio, quiz, script, and vocabulary support.",
+    isLocal: false,
+    resourceFeatures: ["Pre-listening", "Audio", "Quiz", "Transcript", "Vocabulary"],
+    priority: "Primary"
   }),
-  resource(topicId("listening-courses", "Daily Life Listening", "Restaurant Conversation Listening"), {
-    type: "Worksheet",
-    title: "Restaurant Listening Worksheet",
-    url: "/resources/listening/restaurant-listening-worksheet.pdf",
-    source: "Local Placeholder",
+  resource(topicId("listening-courses", "Daily Life Listening", "Shopping Conversation Listening"), {
+    type: "ESL Listening Website",
+    title: "British Council LearnEnglish: Shopping for clothes",
+    url: "https://learnenglish.britishcouncil.org/free-resources/listening/a1/shopping-clothes",
+    source: "British Council LearnEnglish",
+    level: "A1",
+    notes: "Shop conversation listening page with audio, transcript, and comprehension tasks.",
+    isLocal: false,
+    resourceFeatures: ["Audio", "Transcript", "Exercises"],
+    priority: "Primary"
+  }),
+  resource(topicId("listening-courses", "Daily Life Listening", "Shopping Conversation Listening"), {
+    type: "ESL Listening Website",
+    title: "LearnEnglish Teens: Shopping for clothes",
+    url: "https://learnenglishteens.britishcouncil.org/skills/listening/a2-listening/shopping-clothes",
+    source: "British Council LearnEnglish Teens",
+    level: "A2",
+    notes: "Clothes-shopping listening page with audio, transcript, exercises, and downloadable worksheets on the source page.",
+    isLocal: false,
+    resourceFeatures: ["Audio", "Transcript", "Exercises", "Worksheet"],
+    priority: "Primary"
+  }),
+  resource(topicId("listening-courses", "Daily Life Listening", "Shopping Conversation Listening"), {
+    type: "ESL Listening Website",
+    title: "Randall's ESL Cyber Listening Lab: Shopping and Prices",
+    url: "https://www.esl-lab.com/basic-english/shopping-and-prices/",
+    source: "Randall's ESL Cyber Listening Lab",
     level: "A1-A2",
-    notes: "Printable worksheet placeholder for pre-listening, detail listening, and review.",
-    isLocal: true,
-    downloadable: true,
-    resourceFeatures: ["Worksheet", "Questions", "Printable"]
+    notes: "Basic listening page for understanding prices, money, audio prompts, and quiz answers.",
+    isLocal: false,
+    resourceFeatures: ["Pre-listening", "Audio", "Quiz", "Script"],
+    priority: "Primary"
+  }),
+  resource(topicId("listening-courses", "Daily Life Listening", "Shopping Conversation Listening"), {
+    type: "ESL Listening Website",
+    title: "Randall's ESL Cyber Listening Lab: Clothing Styles",
+    url: "https://www.esl-lab.com/easy/clothing-styles/",
+    source: "Randall's ESL Cyber Listening Lab",
+    level: "A1-A2",
+    notes: "Shopping-adjacent clothing listening page with audio, quiz, transcript, and vocabulary practice.",
+    isLocal: false,
+    resourceFeatures: ["Pre-listening", "Audio", "Quiz", "Transcript", "Vocabulary"],
+    priority: "Primary"
+  }),
+  resource(topicId("listening-courses", "Daily Life Listening", "Weather Conversation Listening"), {
+    type: "ESL Listening Website",
+    title: "LearnEnglish Teens: Weather forecast",
+    url: "https://learnenglishteens.britishcouncil.org/skills/listening/a2-listening/weather-forecast",
+    source: "British Council LearnEnglish Teens",
+    level: "A2",
+    notes: "Weather forecast listening page with audio, transcript, exercises, and worksheet links on the source page.",
+    isLocal: false,
+    resourceFeatures: ["Audio", "Transcript", "Exercises", "Worksheet"],
+    priority: "Primary"
+  }),
+  resource(topicId("listening-courses", "Daily Life Listening", "Weather Conversation Listening"), {
+    type: "ESL Listening Website",
+    title: "British Council LearnEnglish: A weather forecast",
+    url: "https://learnenglish.britishcouncil.org/free-resources/listening/b1/weather-forecast",
+    source: "British Council LearnEnglish",
+    level: "B1",
+    notes: "Weather forecast listening page with audio, transcript, and comprehension tasks for stronger A2 learners.",
+    isLocal: false,
+    resourceFeatures: ["Audio", "Transcript", "Exercises", "Worksheet"],
+    priority: "Secondary"
+  }),
+  resource(topicId("listening-courses", "Daily Life Listening", "Weather Conversation Listening"), {
+    type: "ESL Listening Website",
+    title: "Randall's ESL Cyber Listening Lab: Friday's Weather Forecast",
+    url: "https://www.esl-lab.com/academic-english/weather-report/",
+    source: "Randall's ESL Cyber Listening Lab",
+    level: "A2-B1",
+    notes: "Weather report listening page with audio, quiz, transcript, and vocabulary support.",
+    isLocal: false,
+    resourceFeatures: ["Pre-listening", "Audio", "Quiz", "Transcript", "Vocabulary"],
+    priority: "Secondary"
+  }),
+  resource(topicId("listening-courses", "Travel Listening", "Airport Announcement Listening"), {
+    type: "ESL Listening Website",
+    title: "Randall's ESL Cyber Listening Lab: Airport Announcement",
+    url: "https://www.esl-lab.com/academic-english/airport-announcement/",
+    source: "Randall's ESL Cyber Listening Lab",
+    level: "B1",
+    notes: "Airport-announcement listening page with audio, quiz, script access, and airport vocabulary support.",
+    isLocal: false,
+    resourceFeatures: ["Pre-listening", "Audio", "Quiz", "Script", "Vocabulary"],
+    priority: "Primary"
+  }),
+  resource(topicId("listening-courses", "Travel Listening", "Airport Announcement Listening"), {
+    type: "Script",
+    title: "Randall's ESL Cyber Listening Lab: Airport Announcement Script",
+    url: "https://www.esl-lab.com/academic-english/airport-announcement-script/",
+    source: "Randall's ESL Cyber Listening Lab",
+    level: "B1",
+    notes: "Script page for the airport announcement audio, useful for transcript checking after listening.",
+    isLocal: false,
+    resourceFeatures: ["Audio", "Script"],
+    priority: "Secondary"
+  }),
+  resource(topicId("listening-courses", "Travel Listening", "Airport Announcement Listening"), {
+    type: "ESL Listening Website",
+    title: "Randall's ESL Cyber Listening Lab: Airplane Trips",
+    url: "https://www.esl-lab.com/basic-english/airplane-trips/",
+    source: "Randall's ESL Cyber Listening Lab",
+    level: "A1-A2",
+    notes: "Basic airplane-travel listening page with audio prompts and quiz practice.",
+    isLocal: false,
+    resourceFeatures: ["Pre-listening", "Audio", "Quiz", "Script"],
+    priority: "Primary"
+  }),
+  resource(topicId("listening-courses", "Travel Listening", "Airport Announcement Listening"), {
+    type: "Vocabulary Notes",
+    title: "Randall's ESL Cyber Listening Lab: Airplane Travel Vocabulary",
+    url: "https://www.esl-lab.com/vocabulary-lessons/airplane-travel/",
+    source: "Randall's ESL Cyber Listening Lab",
+    level: "A1-A2",
+    notes: "External vocabulary listening page for airport and airplane terms with audio and quiz practice.",
+    isLocal: false,
+    resourceFeatures: ["Audio", "Vocabulary", "Quiz"],
+    priority: "Secondary"
+  }),
+  resource(topicId("listening-courses", "Travel Listening", "Hotel Check-in Listening"), {
+    type: "ESL Listening Website",
+    title: "Randall's ESL Cyber Listening Lab: Hotel Reservations",
+    url: "https://www.esl-lab.com/easy/hotel-reservations/",
+    source: "Randall's ESL Cyber Listening Lab",
+    level: "A1-A2",
+    notes: "Hotel reservation listening page with audio, quiz, transcript access, and vocabulary support.",
+    isLocal: false,
+    resourceFeatures: ["Pre-listening", "Audio", "Quiz", "Transcript", "Vocabulary"],
+    priority: "Primary"
+  }),
+  resource(topicId("listening-courses", "Travel Listening", "Hotel Check-in Listening"), {
+    type: "Script",
+    title: "Randall's ESL Cyber Listening Lab: Hotel Reservation Script",
+    url: "https://www.esl-lab.com/easy/hotel-reservations-script/",
+    source: "Randall's ESL Cyber Listening Lab",
+    level: "A1-A2",
+    notes: "Script page for checking the hotel reservation conversation after listening.",
+    isLocal: false,
+    resourceFeatures: ["Audio", "Script"],
+    priority: "Secondary"
+  }),
+  resource(topicId("listening-courses", "Travel Listening", "Hotel Check-in Listening"), {
+    type: "ESL Listening Website",
+    title: "Randall's ESL Cyber Listening Lab: Hotel Room Service",
+    url: "https://www.esl-lab.com/easy/hotel-room-service/",
+    source: "Randall's ESL Cyber Listening Lab",
+    level: "A1-A2",
+    notes: "Hotel service listening page with audio, quiz, script access, and hotel-service vocabulary.",
+    isLocal: false,
+    resourceFeatures: ["Pre-listening", "Audio", "Quiz", "Transcript", "Vocabulary"],
+    priority: "Primary"
+  }),
+  resource(topicId("listening-courses", "Travel Listening", "Hotel Check-in Listening"), {
+    type: "Vocabulary Notes",
+    title: "Randall's ESL Cyber Listening Lab: Hotel Rooms Vocabulary",
+    url: "https://www.esl-lab.com/vocabulary-lessons/hotel-rooms/",
+    source: "Randall's ESL Cyber Listening Lab",
+    level: "A1-A2",
+    notes: "External hotel vocabulary listening page with audio and quiz practice for check-in language.",
+    isLocal: false,
+    resourceFeatures: ["Audio", "Vocabulary", "Quiz"],
+    priority: "Secondary"
   }),
   resource(topicId("listening-courses", "Test-style Listening", "Number and Time Listening"), {
     type: "ESL Listening Website",
@@ -1224,59 +1422,37 @@ const resources = [
     priority: "Primary"
   }),
   resource(topicId("listening-courses", "Test-style Listening", "Number and Time Listening"), {
-    type: "Answer Key",
-    title: "Number and Time Listening Answer Key",
-    url: "/resources/listening/number-time-answer-key.pdf",
-    source: "Local Placeholder",
-    level: "A1-A2",
-    notes: "Answer key placeholder for number, date, and time dictation checks.",
-    isLocal: true,
-    downloadable: true,
-    resourceFeatures: ["Answer Key", "Printable"]
-  }),
-  resource(topicId("listening-courses", "Test-style Listening", "Number and Time Listening"), {
-    type: "Vocabulary Notes",
-    title: "Number and Time Vocabulary Notes",
-    url: "/resources/listening/number-time-vocabulary-notes.pdf",
-    source: "Local Placeholder",
-    level: "A1-A2",
-    notes: "Vocabulary support placeholder for numbers, times, dates, and classroom checks.",
-    isLocal: true,
-    downloadable: true,
-    resourceFeatures: ["Vocabulary", "Teacher Notes"]
-  }),
-  resource(topicId("listening-courses", "News & Real-world Listening", "Technology News Listening"), {
     type: "ESL Listening Website",
-    title: "Randall's ESL Cyber Listening Lab: Internet Service",
-    url: "https://www.esl-lab.com/academic-english/internet-service/",
+    title: "Randall's ESL Cyber Listening Lab: Telling Time",
+    url: "https://www.esl-lab.com/basic-english/telling-time/",
     source: "Randall's ESL Cyber Listening Lab",
-    level: "A2-B1",
-    notes: "Primary internet-service listening page with pre-listening, audio, quiz, transcript, and vocabulary support.",
+    level: "A1-A2",
+    notes: "Basic time-listening page with audio prompts, quiz practice, and script support.",
     isLocal: false,
-    resourceFeatures: ["Pre-listening", "Audio", "Quiz", "Transcript", "Vocabulary"],
+    resourceFeatures: ["Pre-listening", "Audio", "Quiz", "Script"],
     priority: "Primary"
   }),
-  resource(topicId("listening-courses", "News & Real-world Listening", "Technology News Listening"), {
-    type: "Interactive Quiz",
-    title: "Internet Problems Listening Quiz",
-    url: "/resources/listening/internet-problems-listening-quiz.pdf",
-    source: "Local Placeholder",
+  resource(topicId("listening-courses", "Test-style Listening", "Number and Time Listening"), {
+    type: "ESL Listening Website",
+    title: "Randall's ESL Cyber Listening Lab: Phone Numbers",
+    url: "https://www.esl-lab.com/basic-english/phone-numbers/",
+    source: "Randall's ESL Cyber Listening Lab",
     level: "A1-A2",
-    notes: "Quiz placeholder for troubleshooting details and service-problem vocabulary.",
-    isLocal: true,
-    downloadable: true,
-    resourceFeatures: ["Quiz", "Answer Key"]
+    notes: "Basic number-recognition listening page with audio, quiz, and script practice.",
+    isLocal: false,
+    resourceFeatures: ["Pre-listening", "Audio", "Quiz", "Script"],
+    priority: "Primary"
   }),
-  resource(topicId("listening-courses", "News & Real-world Listening", "Technology News Listening"), {
-    type: "Knowledge Points",
-    title: "Internet Service Knowledge Points",
-    url: "/resources/listening/internet-service-knowledge-points.pdf",
-    source: "Local Placeholder",
+  resource(topicId("listening-courses", "Test-style Listening", "Number and Time Listening"), {
+    type: "ESL Listening Website",
+    title: "Randall's ESL Cyber Listening Lab: Calendars and Dates",
+    url: "https://www.esl-lab.com/basic-english/calendars/",
+    source: "Randall's ESL Cyber Listening Lab",
     level: "A1-A2",
-    notes: "Knowledge-point notes for common internet-service terms and problem categories.",
-    isLocal: true,
-    downloadable: true,
-    resourceFeatures: ["Vocabulary", "Knowledge Points"]
+    notes: "Basic dates-listening page with audio and quiz support for calendar language.",
+    isLocal: false,
+    resourceFeatures: ["Pre-listening", "Audio", "Quiz", "Script"],
+    priority: "Primary"
   }),
   resource(topicId("listening-courses", "News & Real-world Listening", "Simple News Listening"), {
     type: "ESL Listening Website",
@@ -1291,6 +1467,17 @@ const resources = [
   }),
   resource(topicId("listening-courses", "News & Real-world Listening", "Simple News Listening"), {
     type: "ESL Listening Website",
+    title: "VOA Learning English: Let's Learn English Level 1",
+    url: "https://learningenglish.voanews.com/p/5644.html",
+    source: "VOA Learning English",
+    level: "A1-A2",
+    notes: "Beginner-friendly VOA course library with video, transcript, vocabulary, and teacher support links on source pages.",
+    isLocal: false,
+    resourceFeatures: ["Audio", "Video", "Transcript", "Vocabulary", "Worksheet"],
+    priority: "Primary"
+  }),
+  resource(topicId("listening-courses", "News & Real-world Listening", "Simple News Listening"), {
+    type: "ESL Listening Website",
     title: "BBC Learning English",
     url: "https://www.bbc.co.uk/learningenglish",
     source: "BBC Learning English",
@@ -1300,27 +1487,49 @@ const resources = [
     resourceFeatures: ["Audio", "Video", "News", "Vocabulary"],
     priority: "Primary"
   }),
-  resource(topicId("listening-courses", "News & Real-world Listening", "Simple News Listening"), {
-    type: "Transcript",
-    title: "Simple News Transcript Tracker",
-    url: "/resources/listening/simple-news-transcript-tracker.docx",
-    source: "Local Placeholder",
-    level: "A1-A2",
-    notes: "Editable tracker for collecting transcript links and source levels from simple news listening sites.",
-    isLocal: true,
-    downloadable: true,
-    resourceFeatures: ["Transcript", "Editable"]
+  resource(topicId("listening-courses", "Business Listening", "Meeting Conversation Listening"), {
+    type: "ESL Listening Website",
+    title: "British Council LearnEnglish: Meeting a new team member",
+    url: "https://learnenglish.britishcouncil.org/free-resources/listening/a1/meeting-new-team-member",
+    source: "British Council LearnEnglish",
+    level: "A1",
+    notes: "Workplace introduction listening page with audio, transcript, and comprehension exercises.",
+    isLocal: false,
+    resourceFeatures: ["Audio", "Transcript", "Exercises"],
+    priority: "Primary"
   }),
-  resource(topicId("listening-courses", "News & Real-world Listening", "Simple News Listening"), {
-    type: "Vocabulary Notes",
-    title: "Simple News Vocabulary Notes",
-    url: "/resources/listening/simple-news-vocabulary-notes.pdf",
-    source: "Local Placeholder",
-    level: "A1-A2",
-    notes: "Vocabulary notes placeholder for recurring news words and teacher-selected knowledge points.",
-    isLocal: true,
-    downloadable: true,
-    resourceFeatures: ["Vocabulary", "News"]
+  resource(topicId("listening-courses", "Business Listening", "Meeting Conversation Listening"), {
+    type: "ESL Listening Website",
+    title: "British Council LearnEnglish: Organising a group project",
+    url: "https://learnenglish.britishcouncil.org/free-resources/listening/a1/organising-group-project",
+    source: "British Council LearnEnglish",
+    level: "A1",
+    notes: "Simple meeting-planning listening page with audio, transcript, and comprehension tasks.",
+    isLocal: false,
+    resourceFeatures: ["Audio", "Transcript", "Exercises"],
+    priority: "Primary"
+  }),
+  resource(topicId("listening-courses", "Business Listening", "Meeting Conversation Listening"), {
+    type: "ESL Listening Website",
+    title: "British Council LearnEnglish: Making a decision",
+    url: "https://learnenglish.britishcouncil.org/free-resources/listening/b1/making-decision",
+    source: "British Council LearnEnglish",
+    level: "B1",
+    notes: "Meeting decision-making listening page for higher-level extension work.",
+    isLocal: false,
+    resourceFeatures: ["Audio", "Transcript", "Exercises", "Worksheet"],
+    priority: "Secondary"
+  }),
+  resource(topicId("listening-courses", "Business Listening", "Meeting Conversation Listening"), {
+    type: "ESL Listening Website",
+    title: "Randall's ESL Cyber Listening Lab: ESL Program Meeting",
+    url: "https://www.esl-lab.com/academic-english/esl-program-meeting/",
+    source: "Randall's ESL Cyber Listening Lab",
+    level: "A2-B1",
+    notes: "Meeting-focused listening page with audio, quiz, transcript access, and vocabulary support.",
+    isLocal: false,
+    resourceFeatures: ["Pre-listening", "Audio", "Quiz", "Transcript", "Vocabulary"],
+    priority: "Secondary"
   })
 ].map((resourceItem, index) => ({
   id: `resource-${String(index + 1).padStart(3, "0")}`,

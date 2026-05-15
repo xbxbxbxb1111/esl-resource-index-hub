@@ -24,8 +24,8 @@ Current dataset:
 - 7 main categories
 - 60 topic/toolkit groups
 - 468 topic records
-- 39 sample resource records
-- 18 Listening Courses sample resource records
+- 58 sample resource records
+- 37 real Listening Courses resource records
 
 ## Level Rules
 
