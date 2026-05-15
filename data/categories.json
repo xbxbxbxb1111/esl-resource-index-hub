@@ -1,0 +1,534 @@
+[
+  {
+    "id": "speaking-topics",
+    "slug": "speaking-topics",
+    "title": "Speaking Topics",
+    "description": "Everyday speaking topics for adult ESL classes, organized from personal identity to picture description.",
+    "audience": "Adult speaking classes",
+    "levelRange": [
+      "A1",
+      "A2"
+    ],
+    "groupCount": 12,
+    "totalTopics": 120,
+    "accent": "#3f6f64",
+    "groups": [
+      {
+        "id": "speaking-topics-personal-life-identity",
+        "slug": "personal-life-identity",
+        "title": "Personal Life & Identity",
+        "summary": "Personal Life & Identity resource index for speaking topics classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "speaking-topics-daily-life-routine",
+        "slug": "daily-life-routine",
+        "title": "Daily Life & Routine",
+        "summary": "Daily Life & Routine resource index for speaking topics classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "speaking-topics-family-friends-relationships",
+        "slug": "family-friends-relationships",
+        "title": "Family, Friends & Relationships",
+        "summary": "Family, Friends & Relationships resource index for speaking topics classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "speaking-topics-food-drinks-restaurants",
+        "slug": "food-drinks-restaurants",
+        "title": "Food, Drinks & Restaurants",
+        "summary": "Food, Drinks & Restaurants resource index for speaking topics classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "speaking-topics-shopping-money-services",
+        "slug": "shopping-money-services",
+        "title": "Shopping, Money & Services",
+        "summary": "Shopping, Money & Services resource index for speaking topics classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "speaking-topics-work-jobs-study",
+        "slug": "work-jobs-study",
+        "title": "Work, Jobs & Study",
+        "summary": "Work, Jobs & Study resource index for speaking topics classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "speaking-topics-home-city-places",
+        "slug": "home-city-places",
+        "title": "Home, City & Places",
+        "summary": "Home, City & Places resource index for speaking topics classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "speaking-topics-health-body-lifestyle",
+        "slug": "health-body-lifestyle",
+        "title": "Health, Body & Lifestyle",
+        "summary": "Health, Body & Lifestyle resource index for speaking topics classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "speaking-topics-feelings-opinions-personality",
+        "slug": "feelings-opinions-personality",
+        "title": "Feelings, Opinions & Personality",
+        "summary": "Feelings, Opinions & Personality resource index for speaking topics classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "speaking-topics-plans-events-social-life",
+        "slug": "plans-events-social-life",
+        "title": "Plans, Events & Social Life",
+        "summary": "Plans, Events & Social Life resource index for speaking topics classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "speaking-topics-technology-media-online-life",
+        "slug": "technology-media-online-life",
+        "title": "Technology, Media & Online Life",
+        "summary": "Technology, Media & Online Life resource index for speaking topics classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "speaking-topics-picture-talk-description",
+        "slug": "picture-talk-description",
+        "title": "Picture Talk & Description",
+        "summary": "Picture Talk & Description resource index for speaking topics classes.",
+        "topicCount": 10
+      }
+    ]
+  },
+  {
+    "id": "listening-courses",
+    "slug": "listening-courses",
+    "title": "Listening Courses",
+    "description": "Curated ESL listening website indexes for A1-A2 learners, centered on audio, transcripts, quizzes, vocabulary support, and downloadable practice materials.",
+    "audience": "A1-A2 listening classes",
+    "levelRange": [
+      "A1",
+      "A2"
+    ],
+    "groupCount": 6,
+    "totalTopics": 48,
+    "accent": "#6f7f4f",
+    "groups": [
+      {
+        "id": "listening-courses-daily-life-listening",
+        "slug": "daily-life-listening",
+        "title": "Daily Life Listening",
+        "summary": "Daily Life Listening resource index for listening courses classes.",
+        "topicCount": 8
+      },
+      {
+        "id": "listening-courses-travel-listening",
+        "slug": "travel-listening",
+        "title": "Travel Listening",
+        "summary": "Travel Listening resource index for listening courses classes.",
+        "topicCount": 8
+      },
+      {
+        "id": "listening-courses-business-listening",
+        "slug": "business-listening",
+        "title": "Business Listening",
+        "summary": "Business Listening resource index for listening courses classes.",
+        "topicCount": 8
+      },
+      {
+        "id": "listening-courses-native-conversation-listening",
+        "slug": "native-conversation-listening",
+        "title": "Native Conversation Listening",
+        "summary": "Native Conversation Listening resource index for listening courses classes.",
+        "topicCount": 8
+      },
+      {
+        "id": "listening-courses-news-real-world-listening",
+        "slug": "news-real-world-listening",
+        "title": "News & Real-world Listening",
+        "summary": "News & Real-world Listening resource index for listening courses classes.",
+        "topicCount": 8
+      },
+      {
+        "id": "listening-courses-test-style-listening",
+        "slug": "test-style-listening",
+        "title": "Test-style Listening",
+        "summary": "Test-style Listening resource index for listening courses classes.",
+        "topicCount": 8
+      }
+    ]
+  },
+  {
+    "id": "travel-english",
+    "slug": "travel-english",
+    "title": "Travel English",
+    "description": "Travel communication topics for flights, hotels, immigration, directions, shopping, and emergencies.",
+    "audience": "Travel English classes",
+    "levelRange": [
+      "A1",
+      "A2"
+    ],
+    "groupCount": 6,
+    "totalTopics": 48,
+    "accent": "#4f83a1",
+    "groups": [
+      {
+        "id": "travel-english-before-the-trip",
+        "slug": "before-the-trip",
+        "title": "Before the Trip",
+        "summary": "Before the Trip resource index for travel english classes.",
+        "topicCount": 8
+      },
+      {
+        "id": "travel-english-airport-flight",
+        "slug": "airport-flight",
+        "title": "Airport & Flight",
+        "summary": "Airport & Flight resource index for travel english classes.",
+        "topicCount": 8
+      },
+      {
+        "id": "travel-english-immigration-baggage-customs",
+        "slug": "immigration-baggage-customs",
+        "title": "Immigration, Baggage & Customs",
+        "summary": "Immigration, Baggage & Customs resource index for travel english classes.",
+        "topicCount": 8
+      },
+      {
+        "id": "travel-english-hotel-accommodation",
+        "slug": "hotel-accommodation",
+        "title": "Hotel & Accommodation",
+        "summary": "Hotel & Accommodation resource index for travel english classes.",
+        "topicCount": 8
+      },
+      {
+        "id": "travel-english-transport-directions",
+        "slug": "transport-directions",
+        "title": "Transport & Directions",
+        "summary": "Transport & Directions resource index for travel english classes.",
+        "topicCount": 8
+      },
+      {
+        "id": "travel-english-food-shopping-emergency",
+        "slug": "food-shopping-emergency",
+        "title": "Food, Shopping & Emergency",
+        "summary": "Food, Shopping & Emergency resource index for travel english classes.",
+        "topicCount": 8
+      }
+    ]
+  },
+  {
+    "id": "business-english",
+    "slug": "business-english",
+    "title": "Business English",
+    "description": "Professional communication topics for workplace basics, email, meetings, presentations, scheduling, HR, and feedback.",
+    "audience": "Workplace English classes",
+    "levelRange": [
+      "A2",
+      "B1"
+    ],
+    "groupCount": 8,
+    "totalTopics": 80,
+    "accent": "#596f9d",
+    "groups": [
+      {
+        "id": "business-english-workplace-basics",
+        "slug": "workplace-basics",
+        "title": "Workplace Basics",
+        "summary": "Workplace Basics resource index for business english classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "business-english-email-written-communication",
+        "slug": "email-written-communication",
+        "title": "Email & Written Communication",
+        "summary": "Email & Written Communication resource index for business english classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "business-english-meetings-discussions",
+        "slug": "meetings-discussions",
+        "title": "Meetings & Discussions",
+        "summary": "Meetings & Discussions resource index for business english classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "business-english-presentations-reporting",
+        "slug": "presentations-reporting",
+        "title": "Presentations & Reporting",
+        "summary": "Presentations & Reporting resource index for business english classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "business-english-phone-online-meetings-scheduling",
+        "slug": "phone-online-meetings-scheduling",
+        "title": "Phone, Online Meetings & Scheduling",
+        "summary": "Phone, Online Meetings & Scheduling resource index for business english classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "business-english-professional-communication-skills",
+        "slug": "professional-communication-skills",
+        "title": "Professional Communication Skills",
+        "summary": "Professional Communication Skills resource index for business english classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "business-english-hr-job-search-office-culture",
+        "slug": "hr-job-search-office-culture",
+        "title": "HR, Job Search & Office Culture",
+        "summary": "HR, Job Search & Office Culture resource index for business english classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "business-english-management-problems-feedback",
+        "slug": "management-problems-feedback",
+        "title": "Management, Problems & Feedback",
+        "summary": "Management, Problems & Feedback resource index for business english classes.",
+        "topicCount": 10
+      }
+    ]
+  },
+  {
+    "id": "foreign-trade-english",
+    "slug": "foreign-trade-english",
+    "title": "Foreign Trade English",
+    "description": "Export and trade communication topics for products, inquiries, quotations, samples, orders, production, shipping, and after-sales.",
+    "audience": "Foreign trade and export English classes",
+    "levelRange": [
+      "A1",
+      "A2"
+    ],
+    "groupCount": 8,
+    "totalTopics": 80,
+    "accent": "#9a6a3d",
+    "groups": [
+      {
+        "id": "foreign-trade-english-company-product-market",
+        "slug": "company-product-market",
+        "title": "Company, Product & Market",
+        "summary": "Company, Product & Market resource index for foreign trade english classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "foreign-trade-english-inquiry-customer-development",
+        "slug": "inquiry-customer-development",
+        "title": "Inquiry & Customer Development",
+        "summary": "Inquiry & Customer Development resource index for foreign trade english classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "foreign-trade-english-quotation-price-negotiation",
+        "slug": "quotation-price-negotiation",
+        "title": "Quotation, Price & Negotiation",
+        "summary": "Quotation, Price & Negotiation resource index for foreign trade english classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "foreign-trade-english-samples-moq-customization",
+        "slug": "samples-moq-customization",
+        "title": "Samples, MOQ & Customization",
+        "summary": "Samples, MOQ & Customization resource index for foreign trade english classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "foreign-trade-english-orders-payment-contracts",
+        "slug": "orders-payment-contracts",
+        "title": "Orders, Payment & Contracts",
+        "summary": "Orders, Payment & Contracts resource index for foreign trade english classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "foreign-trade-english-production-quality-packaging",
+        "slug": "production-quality-packaging",
+        "title": "Production, Quality & Packaging",
+        "summary": "Production, Quality & Packaging resource index for foreign trade english classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "foreign-trade-english-shipping-documents-customs",
+        "slug": "shipping-documents-customs",
+        "title": "Shipping, Documents & Customs",
+        "summary": "Shipping, Documents & Customs resource index for foreign trade english classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "foreign-trade-english-after-sales-claims-relationship-maintenance",
+        "slug": "after-sales-claims-relationship-maintenance",
+        "title": "After-sales, Claims & Relationship Maintenance",
+        "summary": "After-sales, Claims & Relationship Maintenance resource index for foreign trade english classes.",
+        "topicCount": 10
+      }
+    ]
+  },
+  {
+    "id": "native-phrases",
+    "slug": "native-phrases",
+    "title": "Native Phrases",
+    "description": "Natural phrase categories for conversation management, reactions, opinions, requests, softening, small talk, workplace replies, and problem-solving.",
+    "audience": "Natural English phrase classes",
+    "levelRange": [
+      "A1",
+      "A2"
+    ],
+    "groupCount": 8,
+    "totalTopics": 80,
+    "accent": "#b96f54",
+    "groups": [
+      {
+        "id": "native-phrases-conversation-management",
+        "slug": "conversation-management",
+        "title": "Conversation Management",
+        "summary": "Conversation Management resource index for native phrases classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "native-phrases-reactions-emotions",
+        "slug": "reactions-emotions",
+        "title": "Reactions & Emotions",
+        "summary": "Reactions & Emotions resource index for native phrases classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "native-phrases-opinions-discussion",
+        "slug": "opinions-discussion",
+        "title": "Opinions & Discussion",
+        "summary": "Opinions & Discussion resource index for native phrases classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "native-phrases-suggestions-requests-refusals",
+        "slug": "suggestions-requests-refusals",
+        "title": "Suggestions, Requests & Refusals",
+        "summary": "Suggestions, Requests & Refusals resource index for native phrases classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "native-phrases-politeness-softening",
+        "slug": "politeness-softening",
+        "title": "Politeness & Softening",
+        "summary": "Politeness & Softening resource index for native phrases classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "native-phrases-social-small-talk",
+        "slug": "social-small-talk",
+        "title": "Social Small Talk",
+        "summary": "Social Small Talk resource index for native phrases classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "native-phrases-workplace-native-phrases",
+        "slug": "workplace-native-phrases",
+        "title": "Workplace Native Phrases",
+        "summary": "Workplace Native Phrases resource index for native phrases classes.",
+        "topicCount": 10
+      },
+      {
+        "id": "native-phrases-problem-solving-phrases",
+        "slug": "problem-solving-phrases",
+        "title": "Problem-solving Phrases",
+        "summary": "Problem-solving Phrases resource index for native phrases classes.",
+        "topicCount": 10
+      }
+    ]
+  },
+  {
+    "id": "teacher-toolkit",
+    "slug": "teacher-toolkit",
+    "title": "Teacher Toolkit",
+    "description": "Reusable teacher assets for prompts, templates, cards, warm-ups, games, class structures, and assessment forms.",
+    "audience": "ESL teachers and curriculum builders",
+    "levelRange": [
+      "A1",
+      "A2"
+    ],
+    "groupCount": 12,
+    "totalTopics": 12,
+    "accent": "#7b6aa8",
+    "groups": [
+      {
+        "id": "teacher-toolkit-ppt-prompts",
+        "slug": "ppt-prompts",
+        "title": "PPT Prompts",
+        "summary": "Reusable ppt prompts resources for ESL teachers.",
+        "topicCount": 1
+      },
+      {
+        "id": "teacher-toolkit-handout-templates",
+        "slug": "handout-templates",
+        "title": "Handout Templates",
+        "summary": "Reusable handout templates resources for ESL teachers.",
+        "topicCount": 1
+      },
+      {
+        "id": "teacher-toolkit-dialogue-templates",
+        "slug": "dialogue-templates",
+        "title": "Dialogue Templates",
+        "summary": "Reusable dialogue templates resources for ESL teachers.",
+        "topicCount": 1
+      },
+      {
+        "id": "teacher-toolkit-role-play-cards",
+        "slug": "role-play-cards",
+        "title": "Role-play Cards",
+        "summary": "Reusable role-play cards resources for ESL teachers.",
+        "topicCount": 1
+      },
+      {
+        "id": "teacher-toolkit-picture-talk-materials",
+        "slug": "picture-talk-materials",
+        "title": "Picture Talk Materials",
+        "summary": "Reusable picture talk materials resources for ESL teachers.",
+        "topicCount": 1
+      },
+      {
+        "id": "teacher-toolkit-warm-up-questions",
+        "slug": "warm-up-questions",
+        "title": "Warm-up Questions",
+        "summary": "Reusable warm-up questions resources for ESL teachers.",
+        "topicCount": 1
+      },
+      {
+        "id": "teacher-toolkit-game-templates",
+        "slug": "game-templates",
+        "title": "Game Templates",
+        "summary": "Reusable game templates resources for ESL teachers.",
+        "topicCount": 1
+      },
+      {
+        "id": "teacher-toolkit-listening-class-templates",
+        "slug": "listening-class-templates",
+        "title": "Listening Class Templates",
+        "summary": "Reusable listening class templates resources for ESL teachers.",
+        "topicCount": 1
+      },
+      {
+        "id": "teacher-toolkit-reading-class-templates",
+        "slug": "reading-class-templates",
+        "title": "Reading Class Templates",
+        "summary": "Reusable reading class templates resources for ESL teachers.",
+        "topicCount": 1
+      },
+      {
+        "id": "teacher-toolkit-grammar-through-speaking-templates",
+        "slug": "grammar-through-speaking-templates",
+        "title": "Grammar-through-Speaking Templates",
+        "summary": "Reusable grammar-through-speaking templates resources for ESL teachers.",
+        "topicCount": 1
+      },
+      {
+        "id": "teacher-toolkit-lesson-flow-templates",
+        "slug": "lesson-flow-templates",
+        "title": "Lesson Flow Templates",
+        "summary": "Reusable lesson flow templates resources for ESL teachers.",
+        "topicCount": 1
+      },
+      {
+        "id": "teacher-toolkit-assessment-feedback-forms",
+        "slug": "assessment-feedback-forms",
+        "title": "Assessment & Feedback Forms",
+        "summary": "Reusable assessment & feedback forms resources for ESL teachers.",
+        "topicCount": 1
+      }
+    ]
+  }
+]

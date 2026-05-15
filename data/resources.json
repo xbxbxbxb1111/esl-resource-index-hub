@@ -1,0 +1,673 @@
+[
+  {
+    "id": "resource-001",
+    "topicId": "speaking-topics-personal-life-identity-self-introduction",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Printable",
+      "Teacher Notes"
+    ],
+    "priority": "Secondary",
+    "type": "Worksheet",
+    "title": "Self-introduction Starter Worksheet",
+    "url": "/resources/speaking/self-introduction-starter-worksheet.pdf",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "Printable worksheet placeholder for basic introduction prompts.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-002",
+    "topicId": "speaking-topics-personal-life-identity-self-introduction",
+    "downloadable": false,
+    "resourceFeatures": [
+      "Video"
+    ],
+    "priority": "Supplement",
+    "type": "YouTube Supplement",
+    "title": "Self Introduction ESL Video Search",
+    "url": "https://www.youtube.com/results?search_query=ESL+self+introduction+beginner",
+    "source": "YouTube Search",
+    "level": "A1-A2",
+    "notes": "Supplementary search link for teacher-selected beginner self-introduction videos.",
+    "isLocal": false
+  },
+  {
+    "id": "resource-003",
+    "topicId": "speaking-topics-personal-life-identity-self-introduction",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Editable",
+      "Teacher Notes"
+    ],
+    "priority": "Secondary",
+    "type": "Word",
+    "title": "First Class Self-introduction Planning Notes",
+    "url": "/resources/speaking/self-introduction-first-class-plan.docx",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "Editable document placeholder for short teacher planning notes.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-004",
+    "topicId": "speaking-topics-food-drinks-restaurants-ordering-in-a-restaurant",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Slides",
+      "Role-play"
+    ],
+    "priority": "Secondary",
+    "type": "PPT",
+    "title": "Restaurant Ordering Slide Set",
+    "url": "/resources/speaking/ordering-in-a-restaurant-slides.pptx",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "Slide placeholder for menu language, ordering stages, and service roles.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-005",
+    "topicId": "speaking-topics-food-drinks-restaurants-ordering-in-a-restaurant",
+    "downloadable": false,
+    "resourceFeatures": [
+      "Audio",
+      "Exercises"
+    ],
+    "priority": "Supplement",
+    "type": "External Website",
+    "title": "Restaurant English Resource Search",
+    "url": "https://learnenglish.britishcouncil.org/search?keyword=restaurant",
+    "source": "British Council Search",
+    "level": "A1-A2",
+    "notes": "External search page for restaurant-related listening and vocabulary resources.",
+    "isLocal": false
+  },
+  {
+    "id": "resource-006",
+    "topicId": "speaking-topics-food-drinks-restaurants-ordering-in-a-restaurant",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Audio"
+    ],
+    "priority": "Secondary",
+    "type": "Audio File",
+    "title": "Restaurant Ordering Audio Placeholder",
+    "url": "/resources/audio/restaurant-ordering-audio.mp3",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "Audio file placeholder for teacher-created ordering practice.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-007",
+    "topicId": "travel-english-airport-flight-airport-check-in",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Printable"
+    ],
+    "priority": "Secondary",
+    "type": "PDF",
+    "title": "Airport Check-in Phrase Sheet",
+    "url": "/resources/travel/airport-check-in-phrase-sheet.pdf",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "One-page printable reference placeholder for check-in desk language.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-008",
+    "topicId": "travel-english-airport-flight-airport-check-in",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Transcript",
+      "Editable"
+    ],
+    "priority": "Secondary",
+    "type": "Transcript",
+    "title": "Airport Check-in Listening Transcript",
+    "url": "/resources/travel/airport-check-in-transcript.docx",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "Editable transcript placeholder for a short airport check-in listening task.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-009",
+    "topicId": "travel-english-airport-flight-airport-check-in",
+    "downloadable": false,
+    "resourceFeatures": [
+      "Video"
+    ],
+    "priority": "Supplement",
+    "type": "YouTube Supplement",
+    "title": "Airport Check-in ESL Video Search",
+    "url": "https://www.youtube.com/results?search_query=airport+check+in+english+conversation",
+    "source": "YouTube Search",
+    "level": "A1-A2",
+    "notes": "Supplementary search link for teacher-reviewed airport check-in videos.",
+    "isLocal": false
+  },
+  {
+    "id": "resource-010",
+    "topicId": "business-english-email-written-communication-writing-a-polite-email",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Editable",
+      "Templates"
+    ],
+    "priority": "Secondary",
+    "type": "Word",
+    "title": "Polite Email Template Pack",
+    "url": "/resources/business/polite-email-template-pack.docx",
+    "source": "Local Placeholder",
+    "level": "A2-B1",
+    "notes": "Editable template placeholder for request, reply, follow-up, and reminder emails.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-011",
+    "topicId": "business-english-email-written-communication-writing-a-polite-email",
+    "downloadable": false,
+    "resourceFeatures": [
+      "Reference"
+    ],
+    "priority": "Supplement",
+    "type": "Article",
+    "title": "Business Email Writing Reference",
+    "url": "https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/basic_business_letters/index.html",
+    "source": "Purdue OWL",
+    "level": "A2-B1",
+    "notes": "External reference for formal professional writing conventions.",
+    "isLocal": false
+  },
+  {
+    "id": "resource-012",
+    "topicId": "business-english-email-written-communication-writing-a-polite-email",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Quiz",
+      "Answer Key"
+    ],
+    "priority": "Secondary",
+    "type": "Interactive Quiz",
+    "title": "Email Tone Sorting Quiz",
+    "url": "/resources/business/email-tone-sorting-quiz.pdf",
+    "source": "Local Placeholder",
+    "level": "A2-B1",
+    "notes": "Printable quiz placeholder for identifying formal, polite, and direct email tones.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-013",
+    "topicId": "foreign-trade-english-quotation-price-negotiation-sending-a-quotation",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Slides",
+      "Email"
+    ],
+    "priority": "Secondary",
+    "type": "PPT",
+    "title": "Quotation Email Structure Slides",
+    "url": "/resources/foreign-trade/sending-a-quotation-slides.pptx",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "Slide placeholder for quotation structure, price terms, and attachment references.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-014",
+    "topicId": "foreign-trade-english-quotation-price-negotiation-sending-a-quotation",
+    "downloadable": false,
+    "resourceFeatures": [
+      "Reference"
+    ],
+    "priority": "Supplement",
+    "type": "External Website",
+    "title": "Incoterms Overview",
+    "url": "https://iccwbo.org/business-solutions/incoterms-rules/",
+    "source": "ICC",
+    "level": "A1-A2",
+    "notes": "External reference page for shipping terms that often appear in quotations.",
+    "isLocal": false
+  },
+  {
+    "id": "resource-015",
+    "topicId": "foreign-trade-english-quotation-price-negotiation-sending-a-quotation",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Printable",
+      "Checklist"
+    ],
+    "priority": "Secondary",
+    "type": "Worksheet",
+    "title": "Quotation Details Checklist",
+    "url": "/resources/foreign-trade/quotation-details-checklist.pdf",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "Checklist placeholder for price, quantity, validity, payment, and delivery details.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-016",
+    "topicId": "native-phrases-politeness-softening-sounding-more-polite",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Reference",
+      "Printable"
+    ],
+    "priority": "Secondary",
+    "type": "PDF",
+    "title": "Politeness Phrase Index",
+    "url": "/resources/native-phrases/politeness-phrase-index.pdf",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "Reference placeholder for grouping softening phrases by classroom use case.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-017",
+    "topicId": "native-phrases-politeness-softening-sounding-more-polite",
+    "downloadable": false,
+    "resourceFeatures": [
+      "Video"
+    ],
+    "priority": "Supplement",
+    "type": "YouTube Supplement",
+    "title": "Polite English Phrase Video Search",
+    "url": "https://www.youtube.com/results?search_query=polite+english+phrases+ESL",
+    "source": "YouTube Search",
+    "level": "A1-A2",
+    "notes": "Supplementary search link for teacher-selected videos on polite English phrasing.",
+    "isLocal": false
+  },
+  {
+    "id": "resource-018",
+    "topicId": "native-phrases-politeness-softening-sounding-more-polite",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Printable",
+      "Cards"
+    ],
+    "priority": "Secondary",
+    "type": "Worksheet",
+    "title": "Polite vs Direct Sorting Cards",
+    "url": "/resources/native-phrases/polite-vs-direct-sorting-cards.pdf",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "Printable sorting-card placeholder for polite and direct wording comparisons.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-019",
+    "topicId": "teacher-toolkit-ppt-prompts-ppt-prompts",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Slides",
+      "Templates"
+    ],
+    "priority": "Secondary",
+    "type": "PPT",
+    "title": "Blank ESL Topic PPT Prompt Deck",
+    "url": "/resources/toolkit/blank-esl-topic-prompt-deck.pptx",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "Reusable slide deck placeholder for topic prompts and class warm-ups.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-020",
+    "topicId": "teacher-toolkit-ppt-prompts-ppt-prompts",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Editable",
+      "Checklist"
+    ],
+    "priority": "Secondary",
+    "type": "Word",
+    "title": "PPT Prompt Writing Checklist",
+    "url": "/resources/toolkit/ppt-prompt-writing-checklist.docx",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "Editable checklist placeholder for preparing teacher-facing slide prompts.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-021",
+    "topicId": "teacher-toolkit-ppt-prompts-ppt-prompts",
+    "downloadable": false,
+    "resourceFeatures": [
+      "Templates"
+    ],
+    "priority": "Supplement",
+    "type": "External Website",
+    "title": "Canva Presentation Template Search",
+    "url": "https://www.canva.com/templates/s/presentation/",
+    "source": "Canva",
+    "level": "A1-A2",
+    "notes": "External search page for presentation templates teachers can adapt.",
+    "isLocal": false
+  },
+  {
+    "id": "resource-022",
+    "topicId": "listening-courses-daily-life-listening-self-introduction-listening",
+    "downloadable": false,
+    "resourceFeatures": [
+      "Audio",
+      "Transcript",
+      "Exercises"
+    ],
+    "priority": "Primary",
+    "type": "ESL Listening Website",
+    "title": "British Council LearnEnglish: Meeting other students",
+    "url": "https://learnenglish.britishcouncil.org/skills/listening/a1-listening/meeting-other-students",
+    "source": "British Council LearnEnglish",
+    "level": "A1",
+    "notes": "Primary beginner listening page with audio, transcript support, and exercises.",
+    "isLocal": false
+  },
+  {
+    "id": "resource-023",
+    "topicId": "listening-courses-daily-life-listening-self-introduction-listening",
+    "downloadable": false,
+    "resourceFeatures": [
+      "Audio",
+      "Video",
+      "Transcript",
+      "Vocabulary",
+      "Interactive Quiz"
+    ],
+    "priority": "Primary",
+    "type": "ESL Listening Website",
+    "title": "ELLLO main listening library",
+    "url": "https://elllo.org/",
+    "source": "ELLLO",
+    "level": "A1-A2",
+    "notes": "Large ESL listening library with short learner-friendly audio and video entries.",
+    "isLocal": false
+  },
+  {
+    "id": "resource-024",
+    "topicId": "listening-courses-daily-life-listening-self-introduction-listening",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Transcript",
+      "Teacher Notes"
+    ],
+    "priority": "Secondary",
+    "type": "Transcript",
+    "title": "Self-introduction Transcript Notes",
+    "url": "/resources/listening/self-introduction-transcript-notes.docx",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "Editable transcript notes for collecting useful lines from primary listening pages.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-025",
+    "topicId": "listening-courses-daily-life-listening-self-introduction-listening",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Questions",
+      "Printable"
+    ],
+    "priority": "Secondary",
+    "type": "Listening Questions",
+    "title": "Self-introduction Listening Questions",
+    "url": "/resources/listening/self-introduction-listening-questions.pdf",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "Printable question sheet placeholder for gist and detail listening checks.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-026",
+    "topicId": "listening-courses-daily-life-listening-restaurant-conversation-listening",
+    "downloadable": false,
+    "resourceFeatures": [
+      "Audio",
+      "Transcript",
+      "Exercises"
+    ],
+    "priority": "Primary",
+    "type": "ESL Listening Website",
+    "title": "British Council LearnEnglish: Ordering in a cafe",
+    "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a1/ordering-cafe",
+    "source": "British Council LearnEnglish",
+    "level": "A1",
+    "notes": "Primary cafe-ordering listening page with audio, transcript support, and exercises.",
+    "isLocal": false
+  },
+  {
+    "id": "resource-027",
+    "topicId": "listening-courses-daily-life-listening-restaurant-conversation-listening",
+    "downloadable": false,
+    "resourceFeatures": [
+      "Pre-listening",
+      "Audio",
+      "Quiz",
+      "Script"
+    ],
+    "priority": "Primary",
+    "type": "ESL Listening Website",
+    "title": "Randall's ESL Cyber Listening Lab: Restaurants",
+    "url": "https://www.esl-lab.com/basic-english/restaurants/",
+    "source": "Randall's ESL Cyber Listening Lab",
+    "level": "A1-A2",
+    "notes": "Primary restaurant listening page with pre-listening support, audio, quiz, and script.",
+    "isLocal": false
+  },
+  {
+    "id": "resource-028",
+    "topicId": "listening-courses-daily-life-listening-restaurant-conversation-listening",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Script",
+      "Editable"
+    ],
+    "priority": "Secondary",
+    "type": "Script",
+    "title": "Restaurant Script Organizer",
+    "url": "/resources/listening/restaurant-script-organizer.docx",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "Editable script organizer for collecting useful restaurant listening lines.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-029",
+    "topicId": "listening-courses-daily-life-listening-restaurant-conversation-listening",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Worksheet",
+      "Questions",
+      "Printable"
+    ],
+    "priority": "Secondary",
+    "type": "Worksheet",
+    "title": "Restaurant Listening Worksheet",
+    "url": "/resources/listening/restaurant-listening-worksheet.pdf",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "Printable worksheet placeholder for pre-listening, detail listening, and review.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-030",
+    "topicId": "listening-courses-test-style-listening-number-and-time-listening",
+    "downloadable": false,
+    "resourceFeatures": [
+      "Audio",
+      "Transcript",
+      "Exercises"
+    ],
+    "priority": "Primary",
+    "type": "ESL Listening Website",
+    "title": "LearnEnglish Teens: Understanding numbers",
+    "url": "https://learnenglishteens.britishcouncil.org/skills/listening/a1-listening/understanding-numbers",
+    "source": "British Council LearnEnglish Teens",
+    "level": "A1",
+    "notes": "Primary A1 listening page for recognizing numbers in short spoken contexts.",
+    "isLocal": false
+  },
+  {
+    "id": "resource-031",
+    "topicId": "listening-courses-test-style-listening-number-and-time-listening",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Answer Key",
+      "Printable"
+    ],
+    "priority": "Secondary",
+    "type": "Answer Key",
+    "title": "Number and Time Listening Answer Key",
+    "url": "/resources/listening/number-time-answer-key.pdf",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "Answer key placeholder for number, date, and time dictation checks.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-032",
+    "topicId": "listening-courses-test-style-listening-number-and-time-listening",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Vocabulary",
+      "Teacher Notes"
+    ],
+    "priority": "Secondary",
+    "type": "Vocabulary Notes",
+    "title": "Number and Time Vocabulary Notes",
+    "url": "/resources/listening/number-time-vocabulary-notes.pdf",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "Vocabulary support placeholder for numbers, times, dates, and classroom checks.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-033",
+    "topicId": "listening-courses-news-real-world-listening-technology-news-listening",
+    "downloadable": false,
+    "resourceFeatures": [
+      "Pre-listening",
+      "Audio",
+      "Quiz",
+      "Transcript",
+      "Vocabulary"
+    ],
+    "priority": "Primary",
+    "type": "ESL Listening Website",
+    "title": "Randall's ESL Cyber Listening Lab: Internet Service",
+    "url": "https://www.esl-lab.com/academic-english/internet-service/",
+    "source": "Randall's ESL Cyber Listening Lab",
+    "level": "A2-B1",
+    "notes": "Primary internet-service listening page with pre-listening, audio, quiz, transcript, and vocabulary support.",
+    "isLocal": false
+  },
+  {
+    "id": "resource-034",
+    "topicId": "listening-courses-news-real-world-listening-technology-news-listening",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Quiz",
+      "Answer Key"
+    ],
+    "priority": "Secondary",
+    "type": "Interactive Quiz",
+    "title": "Internet Problems Listening Quiz",
+    "url": "/resources/listening/internet-problems-listening-quiz.pdf",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "Quiz placeholder for troubleshooting details and service-problem vocabulary.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-035",
+    "topicId": "listening-courses-news-real-world-listening-technology-news-listening",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Vocabulary",
+      "Knowledge Points"
+    ],
+    "priority": "Secondary",
+    "type": "Knowledge Points",
+    "title": "Internet Service Knowledge Points",
+    "url": "/resources/listening/internet-service-knowledge-points.pdf",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "Knowledge-point notes for common internet-service terms and problem categories.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-036",
+    "topicId": "listening-courses-news-real-world-listening-simple-news-listening",
+    "downloadable": false,
+    "resourceFeatures": [
+      "Audio",
+      "News",
+      "Transcript",
+      "Vocabulary"
+    ],
+    "priority": "Primary",
+    "type": "ESL Listening Website",
+    "title": "VOA Learning English",
+    "url": "https://learningenglish.voanews.com/",
+    "source": "VOA Learning English",
+    "level": "A2-B1",
+    "notes": "Primary simplified-news listening source with audio, transcripts, and vocabulary support.",
+    "isLocal": false
+  },
+  {
+    "id": "resource-037",
+    "topicId": "listening-courses-news-real-world-listening-simple-news-listening",
+    "downloadable": false,
+    "resourceFeatures": [
+      "Audio",
+      "Video",
+      "News",
+      "Vocabulary"
+    ],
+    "priority": "Primary",
+    "type": "ESL Listening Website",
+    "title": "BBC Learning English",
+    "url": "https://www.bbc.co.uk/learningenglish",
+    "source": "BBC Learning English",
+    "level": "A2-B1",
+    "notes": "Primary listening and video source for short news-adjacent English learning segments.",
+    "isLocal": false
+  },
+  {
+    "id": "resource-038",
+    "topicId": "listening-courses-news-real-world-listening-simple-news-listening",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Transcript",
+      "Editable"
+    ],
+    "priority": "Secondary",
+    "type": "Transcript",
+    "title": "Simple News Transcript Tracker",
+    "url": "/resources/listening/simple-news-transcript-tracker.docx",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "Editable tracker for collecting transcript links and source levels from simple news listening sites.",
+    "isLocal": true
+  },
+  {
+    "id": "resource-039",
+    "topicId": "listening-courses-news-real-world-listening-simple-news-listening",
+    "downloadable": true,
+    "resourceFeatures": [
+      "Vocabulary",
+      "News"
+    ],
+    "priority": "Secondary",
+    "type": "Vocabulary Notes",
+    "title": "Simple News Vocabulary Notes",
+    "url": "/resources/listening/simple-news-vocabulary-notes.pdf",
+    "source": "Local Placeholder",
+    "level": "A1-A2",
+    "notes": "Vocabulary notes placeholder for recurring news words and teacher-selected knowledge points.",
+    "isLocal": true
+  }
+]
