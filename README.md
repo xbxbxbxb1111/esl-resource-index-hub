@@ -24,10 +24,10 @@ Current dataset:
 - 7 main categories
 - 60 topic/toolkit groups
 - 468 topic records
-- 163 sample resource records
+- 303 sample resource records
 - 37 real Listening Courses resource records
-- 120 real curated resource records across the first Speaking, Travel, Business, Foreign Trade, and Native Phrases batches
-- 72 resource-ready topic records
+- 260 real curated resource records across the Speaking, Travel, Business, Foreign Trade, and Native Phrases batches
+- 135 resource-ready topic records
 
 ## Level Rules
 

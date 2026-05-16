@@ -882,13 +882,16 @@ const topics = categorySeeds.flatMap((category) =>
 const topicId = (categorySlug, groupTitle, topicTitle) =>
   `${categorySlug}-${slugify(groupTitle)}-${slugify(topicTitle)}`;
 
+const topicLevelById = new Map(topics.map((topic) => [topic.id, topic.levelRange.join("-")]));
+
 function resource(topic, data) {
   return {
     topicId: topic,
     downloadable: false,
     resourceFeatures: [],
     priority: "Secondary",
-    ...data
+    ...data,
+    level: topicLevelById.get(topic) ?? data.level
   };
 }
 
@@ -2521,10 +2524,1905 @@ const curatedResourceBatches = [
         priority: "Secondary"
       }
     ]
+  },
+  {
+    categorySlug: "speaking-topics",
+    groupTitle: "Personal Life & Identity",
+    topicTitle: "Name, Age & Nationality",
+    resources: [
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Countries and Nationality Vocabulary",
+        url: "https://www.englishclub.com/vocabulary/world-countries-nationality.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Country, adjective, and nationality reference for basic personal-information speaking tasks.",
+        resourceFeatures: ["Vocabulary", "Reference"],
+        priority: "Primary"
+      },
+      {
+        type: "Worksheet",
+        title: "EnglishClub: Country, Nationality and Language Worksheet",
+        url: "https://www.englishclub.com/esl-worksheets/vocabulary/nationalities.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Printable worksheet page for controlled practice with countries, nationalities, and languages.",
+        resourceFeatures: ["Worksheet", "Printable"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "speaking-topics",
+    groupTitle: "Personal Life & Identity",
+    topicTitle: "Where Are You From?",
+    resources: [
+      {
+        type: "External Website",
+        title: "EnglishClub: Greetings in the Classroom",
+        url: "https://www.englishclub.com/speaking/greetings-classroom.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Greeting and introduction page with nationality exchange language for where-are-you-from practice.",
+        resourceFeatures: ["Audio", "Functional Language", "Role-play"],
+        priority: "Primary"
+      },
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Countries Vocabulary",
+        url: "https://www.englishclub.com/vocabulary/world-countries.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Country-name reference that supports simple origin questions and short personal answers.",
+        resourceFeatures: ["Vocabulary", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "travel-english",
+    groupTitle: "Before the Trip",
+    topicTitle: "Choosing a Hotel",
+    resources: [
+      {
+        type: "Vocabulary Notes",
+        title: "British Council LearnEnglish: Hotels",
+        url: "https://learnenglish.britishcouncil.org/free-resources/vocabulary/a1-a2/hotels",
+        source: "British Council LearnEnglish",
+        level: "A1-A2",
+        notes: "A1-A2 hotel vocabulary exercises for talking about room types and hotel choices.",
+        resourceFeatures: ["Vocabulary", "Exercises"],
+        priority: "Primary"
+      },
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Hotel Vocabulary",
+        url: "https://www.englishclub.com/english-for-work/hotel-vocabulary.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Hotel word list with contextual examples for comparing accommodation options.",
+        resourceFeatures: ["Vocabulary", "Reference", "Quiz"],
+        priority: "Primary"
+      }
+    ]
+  },
+  {
+    categorySlug: "travel-english",
+    groupTitle: "Airport & Flight",
+    topicTitle: "Seat Selection",
+    resources: [
+      {
+        type: "ESL Listening Website",
+        title: "Randall's ESL Cyber Listening Lab: Airplane Trips",
+        url: "https://www.esl-lab.com/basic-english/airplane-trips/",
+        source: "Randall's ESL Cyber Listening Lab",
+        level: "A1-A2",
+        notes: "Basic airplane ticket listening page with seat-preference language such as window and aisle seats.",
+        resourceFeatures: ["Audio", "Quiz", "Script"],
+        priority: "Primary"
+      },
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Air Travel Vocabulary",
+        url: "https://www.englishclub.com/vocabulary/20_air-travel.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Air travel vocabulary reference including aisle, boarding pass, gate, and window-seat language.",
+        resourceFeatures: ["Vocabulary", "Reference"],
+        priority: "Primary"
+      }
+    ]
+  },
+  {
+    categorySlug: "business-english",
+    groupTitle: "Workplace Basics",
+    topicTitle: "Talking About Your Role",
+    resources: [
+      {
+        type: "Audio Page",
+        title: "Business English Pod: 925 English - Talking about your Job",
+        url: "https://www.businessenglishpod.com/2016/08/14/925-english-lesson-4-talking-about-your-job/",
+        source: "Business English Pod",
+        level: "A2-B1",
+        notes: "Beginner business lesson with practical chunks for describing job title, company, and daily work.",
+        resourceFeatures: ["Audio", "Functional Language", "Vocabulary"],
+        priority: "Primary"
+      },
+      {
+        type: "Audio Page",
+        title: "Business English Pod: BEP 159 - Talking about your Job",
+        url: "https://www.businessenglishpod.com/2010/05/02/bep-159-int-talking-about-your-job/",
+        source: "Business English Pod",
+        level: "A2-B1",
+        notes: "Intermediate audio lesson on explaining job duties, responsibilities, projects, and job satisfaction.",
+        resourceFeatures: ["Audio", "Functional Language", "Vocabulary"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "business-english",
+    groupTitle: "Email & Written Communication",
+    topicTitle: "Email Greetings and Closings",
+    resources: [
+      {
+        type: "External Website",
+        title: "British Council LearnEnglish: Unit 4 - Starting and finishing emails",
+        url: "https://learnenglish.britishcouncil.org/free-resources/business/english-emails/unit-4-starting-finishing-emails",
+        source: "British Council LearnEnglish",
+        level: "A2-B1",
+        notes: "Business email unit focused on formal and informal greetings, closings, punctuation, and layout.",
+        resourceFeatures: ["Exercises", "Email", "Functional Language"],
+        priority: "Primary"
+      },
+      {
+        type: "Article",
+        title: "EnglishClub: Writing a Business Letter",
+        url: "https://www.englishclub.com/business-english/business-letters-write.php",
+        source: "EnglishClub",
+        level: "A2-B1",
+        notes: "Business writing reference with salutation, opening paragraph, final paragraph, and closing examples.",
+        resourceFeatures: ["Email", "Functional Language", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "foreign-trade-english",
+    groupTitle: "Company, Product & Market",
+    topicTitle: "Introducing Your Factory",
+    resources: [
+      {
+        type: "Vocabulary Notes",
+        title: "Business English Pod: Manufacturing Vocabulary 1",
+        url: "https://www.businessenglishpod.com/2016/03/08/video-vocab-47-business-english-vocabulary-manufacturing-1/",
+        source: "Business English Pod",
+        level: "A1-A2",
+        notes: "Manufacturing vocabulary page covering factories, raw materials, assembly lines, and quality control.",
+        resourceFeatures: ["Video", "Vocabulary", "Trade Terms"],
+        priority: "Primary"
+      },
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Company Vocabulary",
+        url: "https://www.englishclub.com/business-english/vocabulary-company.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Company vocabulary list with departments and production terms useful for short factory introductions.",
+        resourceFeatures: ["Vocabulary", "Reference", "Trade Terms"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "foreign-trade-english",
+    groupTitle: "Company, Product & Market",
+    topicTitle: "Product Features",
+    resources: [
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Features, Advantages, Benefits",
+        url: "https://www.businessenglishpod.com/2008/04/12/bep-92-int-sales-features-advantages-benefits-or-fab-presentation/",
+        source: "Business English Pod",
+        level: "A1-A2",
+        notes: "Sales English lesson on connecting product features with advantages and customer benefits.",
+        resourceFeatures: ["Audio", "Functional Language", "Trade Terms"],
+        priority: "Primary"
+      },
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Product Presentation in English 1",
+        url: "https://www.businessenglishpod.com/2014/02/08/business-english-pod-245-product-presentations-1/",
+        source: "Business English Pod",
+        level: "A1-A2",
+        notes: "Product presentation lesson teachers can simplify for describing basic features and how a product works.",
+        resourceFeatures: ["Audio", "Functional Language", "Presentation"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "native-phrases",
+    groupTitle: "Conversation Management",
+    topicTitle: "Changing the Topic",
+    resources: [
+      {
+        type: "Article",
+        title: "EnglishClub: How to Interrupt in English",
+        url: "https://www.englishclub.com/efl/articles/everyday-english/how-to-interrupt-in-english/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Article with polite interruption phrases and related language for getting back on topic or changing topic.",
+        resourceFeatures: ["Functional Language", "Reference"],
+        priority: "Primary"
+      },
+      {
+        type: "Article",
+        title: "EnglishClub: Speaking Skills Guide",
+        url: "https://www.englishclub.com/speaking/guide.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Speaking guide with functional-language categories and conversation-flow support for teachers.",
+        resourceFeatures: ["Functional Language", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "native-phrases",
+    groupTitle: "Conversation Management",
+    topicTitle: "Ending a Conversation",
+    resources: [
+      {
+        type: "Article",
+        title: "EnglishClub: How to Teach Ending Conversations",
+        url: "https://www.englishclub.com/efl/tefl/functional/ending-conversations/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Teacher-facing article with phrase patterns and classroom practice ideas for ending conversations politely.",
+        resourceFeatures: ["Teacher Notes", "Functional Language"],
+        priority: "Primary"
+      },
+      {
+        type: "Audio Page",
+        title: "EnglishClub: How to Say Hello and Goodbye in English",
+        url: "https://www.englishclub.com/efl/survival/hello-goodbye/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Short audio page with simple goodbye phrases for controlled conversation-closing practice.",
+        resourceFeatures: ["Audio", "Functional Language"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "travel-english",
+    groupTitle: "Before the Trip",
+    topicTitle: "Choosing a Hotel",
+    resources: [
+      {
+        type: "External Website",
+        title: "EnglishClub: Taking a Hotel Reservation",
+        url: "https://www.englishclub.com/english-for-work/hotel-reservation.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Hotel reservation page with room-type, date, number-of-guests, and booking language.",
+        resourceFeatures: ["Functional Language", "Role-play", "Quiz"],
+        priority: "Primary"
+      },
+      {
+        type: "External Website",
+        title: "EnglishClub: Checking Guests In and Out",
+        url: "https://www.englishclub.com/english-for-work/hotel-check-in-out.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Hotel front-desk language page for choosing, confirming, and discussing a room stay.",
+        resourceFeatures: ["Functional Language", "Role-play", "Quiz"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "travel-english",
+    groupTitle: "Before the Trip",
+    topicTitle: "Packing a Suitcase",
+    resources: [
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Pack a suitcase",
+        url: "https://www.englishclub.com/ref/esl/Collocations/P/pack_a_suitcase_3593.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Short collocation reference for pack a suitcase, pack a bag, and pack luggage.",
+        resourceFeatures: ["Vocabulary", "Reference", "Quiz"],
+        priority: "Primary"
+      },
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Air Travel Vocabulary",
+        url: "https://www.englishclub.com/vocabulary/20_air-travel.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Air travel vocabulary reference with luggage, carry-on, boarding pass, and baggage-claim terms.",
+        resourceFeatures: ["Vocabulary", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "travel-english",
+    groupTitle: "Before the Trip",
+    topicTitle: "Travel Documents",
+    resources: [
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Airline Vocabulary",
+        url: "https://www.englishclub.com/english-for-work/airline-vocabulary.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Airline vocabulary page covering passport, e-ticket, identification, boarding pass, and check-in terms.",
+        resourceFeatures: ["Vocabulary", "Reference", "Quiz"],
+        priority: "Primary"
+      },
+      {
+        type: "Article",
+        title: "EnglishClub: Airport English",
+        url: "https://www.englishclub.com/efl/survival/airport-english/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Airport survival page with ticket, passport, photo ID, carry-on, and airport question language.",
+        resourceFeatures: ["Functional Language", "Reference"],
+        priority: "Primary"
+      }
+    ]
+  },
+  {
+    categorySlug: "travel-english",
+    groupTitle: "Airport & Flight",
+    topicTitle: "Seat Selection",
+    resources: [
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Airline Vocabulary",
+        url: "https://www.englishclub.com/english-for-work/airline-vocabulary.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Airline vocabulary reference with aisle seat, window seat, row, overhead bin, and cabin language.",
+        resourceFeatures: ["Vocabulary", "Reference", "Quiz"],
+        priority: "Primary"
+      },
+      {
+        type: "External Website",
+        title: "EnglishClub: Checking In Passengers",
+        url: "https://www.englishclub.com/english-for-work/airline-check-in.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Check-in desk page with practical questions about aisle seats, window seats, bags, and boarding.",
+        resourceFeatures: ["Functional Language", "Role-play", "Quiz"],
+        priority: "Primary"
+      }
+    ]
+  },
+  {
+    categorySlug: "travel-english",
+    groupTitle: "Airport & Flight",
+    topicTitle: "Baggage Allowance",
+    resources: [
+      {
+        type: "Article",
+        title: "EnglishClub: Airport English",
+        url: "https://www.englishclub.com/efl/survival/airport-english/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Airport English page with overweight baggage, carry-on luggage, and check-in counter language.",
+        resourceFeatures: ["Functional Language", "Reference"],
+        priority: "Primary"
+      },
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Airline Vocabulary",
+        url: "https://www.englishclub.com/english-for-work/airline-vocabulary.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Airline vocabulary page for baggage, excess baggage, oversized baggage, and luggage claim terms.",
+        resourceFeatures: ["Vocabulary", "Reference", "Quiz"],
+        priority: "Primary"
+      }
+    ]
+  },
+  {
+    categorySlug: "travel-english",
+    groupTitle: "Airport & Flight",
+    topicTitle: "Flight Delay",
+    resources: [
+      {
+        type: "Article",
+        title: "EnglishClub: Airport English",
+        url: "https://www.englishclub.com/efl/survival/airport-english/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Airport survival page that includes delayed and cancelled flight language for travel-problem role plays.",
+        resourceFeatures: ["Functional Language", "Reference"],
+        priority: "Primary"
+      },
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Airline Vocabulary",
+        url: "https://www.englishclub.com/english-for-work/airline-vocabulary.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Airline vocabulary reference with schedule, gate, announcement, and flight-status terms.",
+        resourceFeatures: ["Vocabulary", "Reference", "Quiz"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "travel-english",
+    groupTitle: "Immigration, Baggage & Customs",
+    topicTitle: "Purpose of Visit",
+    resources: [
+      {
+        type: "Article",
+        title: "EnglishClub: Airport English",
+        url: "https://www.englishclub.com/efl/survival/airport-english/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Airport page that helps prepare learners for common travel questions before arrival and immigration.",
+        resourceFeatures: ["Functional Language", "Reference"],
+        priority: "Primary"
+      },
+      {
+        type: "External Website",
+        title: "EnglishClub: Checking In Passengers",
+        url: "https://www.englishclub.com/english-for-work/airline-check-in.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Passenger check-in language page with travel-document and destination questions that support immigration role play.",
+        resourceFeatures: ["Functional Language", "Role-play", "Quiz"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "travel-english",
+    groupTitle: "Immigration, Baggage & Customs",
+    topicTitle: "Length of Stay",
+    resources: [
+      {
+        type: "External Website",
+        title: "EnglishClub: Taking a Hotel Reservation",
+        url: "https://www.englishclub.com/english-for-work/hotel-reservation.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Hotel reservation page with how-long-will-you-stay questions and date-focused answers.",
+        resourceFeatures: ["Functional Language", "Role-play", "Quiz"],
+        priority: "Primary"
+      },
+      {
+        type: "Article",
+        title: "EnglishClub: Airport English",
+        url: "https://www.englishclub.com/efl/survival/airport-english/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Airport English page for practicing short answers about trip plans, travel documents, and destination details.",
+        resourceFeatures: ["Functional Language", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "travel-english",
+    groupTitle: "Hotel & Accommodation",
+    topicTitle: "Room Problems",
+    resources: [
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Hotel Vocabulary",
+        url: "https://www.englishclub.com/english-for-work/hotel-vocabulary.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Hotel vocabulary page with housekeeping, towels, room keys, damage charges, and hotel-service terms.",
+        resourceFeatures: ["Vocabulary", "Reference", "Quiz"],
+        priority: "Primary"
+      },
+      {
+        type: "External Website",
+        title: "EnglishClub: Checking Guests In and Out",
+        url: "https://www.englishclub.com/english-for-work/hotel-check-in-out.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Hotel check-in/out page with complaints, manager requests, room-charge questions, and polite service phrases.",
+        resourceFeatures: ["Functional Language", "Role-play", "Quiz"],
+        priority: "Primary"
+      }
+    ]
+  },
+  {
+    categorySlug: "travel-english",
+    groupTitle: "Hotel & Accommodation",
+    topicTitle: "Checking Out",
+    resources: [
+      {
+        type: "External Website",
+        title: "EnglishClub: Checking Guests In and Out",
+        url: "https://www.englishclub.com/english-for-work/hotel-check-in-out.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Hotel checkout language page with room number, payment, late checkout, room keys, and final bill phrases.",
+        resourceFeatures: ["Functional Language", "Role-play", "Quiz"],
+        priority: "Primary"
+      },
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Hotel Vocabulary",
+        url: "https://www.englishclub.com/english-for-work/hotel-vocabulary.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Hotel vocabulary reference covering check-out, late charge, bill, front desk, and room-service terms.",
+        resourceFeatures: ["Vocabulary", "Reference", "Quiz"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "travel-english",
+    groupTitle: "Transport & Directions",
+    topicTitle: "Buying a Ticket",
+    resources: [
+      {
+        type: "Script",
+        title: "Randall's ESL Cyber Listening Lab: Train Tickets Script",
+        url: "https://www.esl-lab.com/easy/train-tickets-script/",
+        source: "Randall's ESL Cyber Listening Lab",
+        level: "A1-A2",
+        notes: "Train ticket script page with ticket-machine, platform, price, and transport-help language.",
+        resourceFeatures: ["Audio", "Script", "Functional Language"],
+        priority: "Primary"
+      },
+      {
+        type: "Vocabulary Notes",
+        title: "British Council LearnEnglish: Transport 1",
+        url: "https://learnenglish.britishcouncil.org/free-resources/vocabulary/a1-a2/transport-1",
+        source: "British Council LearnEnglish",
+        level: "A1-A2",
+        notes: "A1-A2 transport vocabulary practice for bus, train, taxi, and ticket-buying contexts.",
+        resourceFeatures: ["Vocabulary", "Exercises"],
+        priority: "Primary"
+      }
+    ]
+  },
+  {
+    categorySlug: "travel-english",
+    groupTitle: "Food, Shopping & Emergency",
+    topicTitle: "Medical Emergency",
+    resources: [
+      {
+        type: "Article",
+        title: "EnglishClub: How To Go to a Walk-in Clinic",
+        url: "https://www.englishclub.com/efl/survival/walk-in-clinic/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Survival English page with emergency-room, clinic, insurance, symptom, and pharmacy language.",
+        resourceFeatures: ["Audio", "Functional Language", "Vocabulary"],
+        priority: "Primary"
+      },
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Medical English Vocabulary",
+        url: "https://www.englishclub.com/english-for-work/medical-vocabulary.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Medical vocabulary reference with emergency room, symptoms, injuries, prescription, and patient terms.",
+        resourceFeatures: ["Vocabulary", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "business-english",
+    groupTitle: "Workplace Basics",
+    topicTitle: "Talking About Your Role",
+    resources: [
+      {
+        type: "ESL Listening Website",
+        title: "British Council LearnEnglish: Business cards",
+        url: "https://learnenglish.britishcouncil.org/free-resources/listening/a1/business-cards",
+        source: "British Council LearnEnglish",
+        level: "A2-B1",
+        notes: "Listening page where speakers introduce names, roles, companies, departments, and work context.",
+        resourceFeatures: ["Audio", "Transcript", "Exercises"],
+        priority: "Primary"
+      },
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Jobs Vocabulary",
+        url: "https://www.englishclub.com/vocabulary/jobs.php",
+        source: "EnglishClub",
+        level: "A2-B1",
+        notes: "Job vocabulary reference for talking about roles, occupations, duties, and workplace identity.",
+        resourceFeatures: ["Vocabulary", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "business-english",
+    groupTitle: "Workplace Basics",
+    topicTitle: "Describing Your Company",
+    resources: [
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Company Vocabulary",
+        url: "https://www.englishclub.com/business-english/vocabulary-company.php",
+        source: "EnglishClub",
+        level: "A2-B1",
+        notes: "Company vocabulary page for departments, headquarters, managers, R&D, sales, and company structure.",
+        resourceFeatures: ["Vocabulary", "Reference"],
+        priority: "Primary"
+      },
+      {
+        type: "External Website",
+        title: "EnglishClub: What is Business English?",
+        url: "https://www.englishclub.com/business-english/what.php",
+        source: "EnglishClub",
+        level: "A2-B1",
+        notes: "Business English overview useful for framing simple company-description and workplace-introduction tasks.",
+        resourceFeatures: ["Reference", "Vocabulary"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "business-english",
+    groupTitle: "Email & Written Communication",
+    topicTitle: "Replying to Emails",
+    resources: [
+      {
+        type: "External Website",
+        title: "British Council LearnEnglish: English for emails",
+        url: "https://learnenglish.britishcouncil.org/free-resources/business/english-emails",
+        source: "British Council LearnEnglish",
+        level: "A2-B1",
+        notes: "Business email course index covering openings, enquiries, arrangements, tone, and reply conventions.",
+        resourceFeatures: ["Email", "Exercises", "Functional Language"],
+        priority: "Primary"
+      },
+      {
+        type: "Article",
+        title: "EnglishClub: Business Letters",
+        url: "https://www.englishclub.com/business-english/business-letters.php",
+        source: "EnglishClub",
+        level: "A2-B1",
+        notes: "Business correspondence index for planning, writing, proofreading, and responding to business messages.",
+        resourceFeatures: ["Email", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "business-english",
+    groupTitle: "Email & Written Communication",
+    topicTitle: "Reminder Emails",
+    resources: [
+      {
+        type: "Article",
+        title: "EnglishClub: Planning a Business Letter",
+        url: "https://www.englishclub.com/business-english/business-letters-plan.php",
+        source: "EnglishClub",
+        level: "A2-B1",
+        notes: "Planning guide for clear business reminders with audience, purpose, deadline, and response details.",
+        resourceFeatures: ["Email", "Checklist", "Reference"],
+        priority: "Primary"
+      },
+      {
+        type: "Article",
+        title: "EnglishClub: What Your Students Need To Know About Emailing",
+        url: "https://www.englishclub.com/efl/tefl/skills/emailing/",
+        source: "EnglishClub",
+        level: "A2-B1",
+        notes: "Teacher-facing article on email formality, short messages, and tone choices for reminder emails.",
+        resourceFeatures: ["Teacher Notes", "Email", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "business-english",
+    groupTitle: "Meetings & Discussions",
+    topicTitle: "Setting the Agenda",
+    resources: [
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Starting a Meeting",
+        url: "https://www.businessenglishpod.com/2025/06/08/bep-42c-meeting-in-english-starting/",
+        source: "Business English Pod",
+        level: "A2-B1",
+        notes: "Meeting lesson focused on stating the purpose, reviewing the agenda, and inviting the first speaker.",
+        resourceFeatures: ["Audio", "Functional Language", "Meetings"],
+        priority: "Primary"
+      },
+      {
+        type: "Article",
+        title: "EnglishClub: Meetings",
+        url: "https://www.englishclub.com/business-english/meetings.php",
+        source: "EnglishClub",
+        level: "A2-B1",
+        notes: "Business meetings index with language for chairing, participating, and discussing agenda items.",
+        resourceFeatures: ["Meetings", "Reference", "Functional Language"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "business-english",
+    groupTitle: "Meetings & Discussions",
+    topicTitle: "Disagreeing Politely",
+    resources: [
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Meetings in English - How to Disagree",
+        url: "https://www.businessenglishpod.com/2023/05/01/bep-29c-meetings-in-english-how-to-disagree/",
+        source: "Business English Pod",
+        level: "A2-B1",
+        notes: "Business meeting lesson on disagreeing confidently and politely with formal and informal expressions.",
+        resourceFeatures: ["Audio", "Functional Language", "Meetings"],
+        priority: "Primary"
+      },
+      {
+        type: "Article",
+        title: "EnglishClub: How to Disagree Politely",
+        url: "https://www.englishclub.com/efl/articles/everyday-english/how-to-disagree-politely/",
+        source: "EnglishClub",
+        level: "A2-B1",
+        notes: "Article with soft disagreement tactics such as positive lead-ins, hedging, and indirect phrasing.",
+        resourceFeatures: ["Functional Language", "Reference"],
+        priority: "Primary"
+      }
+    ]
+  },
+  {
+    categorySlug: "business-english",
+    groupTitle: "Presentations & Reporting",
+    topicTitle: "Reporting Progress",
+    resources: [
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Reporting on Progress",
+        url: "https://www.businessenglishpod.com/2024/12/08/bep-39c-english-for-project-management-reporting-on-progress/",
+        source: "Business English Pod",
+        level: "A2-B1",
+        notes: "Project management English lesson focused on reporting progress and confirming key details.",
+        resourceFeatures: ["Audio", "Project Management", "Functional Language"],
+        priority: "Primary"
+      },
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Project Update",
+        url: "https://www.businessenglishpod.com/2007/03/17/bep-39-int-reporting-project-update/",
+        source: "Business English Pod",
+        level: "A2-B1",
+        notes: "Classic project-update lesson for reporting current status, next steps, and progress to colleagues.",
+        resourceFeatures: ["Audio", "Project Management", "Functional Language"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "business-english",
+    groupTitle: "Presentations & Reporting",
+    topicTitle: "Giving a Project Update",
+    resources: [
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Project Update",
+        url: "https://www.businessenglishpod.com/2007/03/17/bep-39-int-reporting-project-update/",
+        source: "Business English Pod",
+        level: "A2-B1",
+        notes: "Project-update lesson for explaining what is finished, what is delayed, and what happens next.",
+        resourceFeatures: ["Audio", "Project Management", "Functional Language"],
+        priority: "Primary"
+      },
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Routine Check-in Meeting",
+        url: "https://www.businessenglishpod.com/2022/02/13/bep-383-business-by-phone-3-routine-check-in-meeting/",
+        source: "Business English Pod",
+        level: "A2-B1",
+        notes: "Routine check-in lesson with language for sharing recent work, challenges, successes, and progress.",
+        resourceFeatures: ["Audio", "Project Management", "Telephone"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "business-english",
+    groupTitle: "Phone, Online Meetings & Scheduling",
+    topicTitle: "Taking a Message",
+    resources: [
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Taking and Leaving a Message",
+        url: "https://www.businessenglishpod.com/2016/01/17/business-english-pod-21b-telephone-english-skills-taking-and-leaving-a-message/",
+        source: "Business English Pod",
+        level: "A2-B1",
+        notes: "Telephone English lesson on asking callers to leave a message and checking details clearly.",
+        resourceFeatures: ["Audio", "Telephone", "Functional Language"],
+        priority: "Primary"
+      },
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Taking a Message in English",
+        url: "https://www.businessenglishpod.com/2010/11/21/bep-69-b-telephoning-taking-a-message/",
+        source: "Business English Pod",
+        level: "A2-B1",
+        notes: "Telephone lesson focused on message-taking information, confirmation, and offering help.",
+        resourceFeatures: ["Audio", "Telephone", "Functional Language"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "business-english",
+    groupTitle: "Phone, Online Meetings & Scheduling",
+    topicTitle: "Confirming an Appointment",
+    resources: [
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Making an Appointment",
+        url: "https://www.businessenglishpod.com/2008/10/11/bep-119-int-telephoning-making-an-appointment/",
+        source: "Business English Pod",
+        level: "A2-B1",
+        notes: "Telephone English lesson for setting, confirming, and agreeing on appointment details.",
+        resourceFeatures: ["Audio", "Telephone", "Scheduling"],
+        priority: "Primary"
+      },
+      {
+        type: "External Website",
+        title: "British Council LearnEnglish: Unit 5 - Making arrangements",
+        url: "https://learnenglish.britishcouncil.org/free-resources/business/english-emails/unit-5-making-arrangements",
+        source: "British Council LearnEnglish",
+        level: "A2-B1",
+        notes: "Email unit for arranging and confirming meeting times, places, and next steps.",
+        resourceFeatures: ["Email", "Exercises", "Scheduling"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "business-english",
+    groupTitle: "Professional Communication Skills",
+    topicTitle: "Asking for Help at Work",
+    resources: [
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Telephoning - Asking for Help",
+        url: "https://www.businessenglishpod.com/2015/07/26/bep-15c-telephoning-asking-for-help/",
+        source: "Business English Pod",
+        level: "A2-B1",
+        notes: "Telephone lesson on introducing a problem, making polite requests, and agreeing on help.",
+        resourceFeatures: ["Audio", "Telephone", "Functional Language"],
+        priority: "Primary"
+      },
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Explaining a Problem",
+        url: "https://www.businessenglishpod.com/2020/06/08/925-english-lesson-33-explaining-a-problem/",
+        source: "Business English Pod",
+        level: "A2-B1",
+        notes: "Beginner business lesson for explaining workplace problems and asking someone to help.",
+        resourceFeatures: ["Audio", "Functional Language", "Problem Solving"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "business-english",
+    groupTitle: "Management, Problems & Feedback",
+    topicTitle: "Apologizing Professionally",
+    resources: [
+      {
+        type: "Article",
+        title: "EnglishClub: How to Apologise in English",
+        url: "https://www.englishclub.com/efl/articles/everyday-english/how-to-apologise-in-english/",
+        source: "EnglishClub",
+        level: "A2-B1",
+        notes: "Phrase guide for basic, formal, and stronger apologies that can be adapted to workplace situations.",
+        resourceFeatures: ["Functional Language", "Reference"],
+        priority: "Primary"
+      },
+      {
+        type: "External Website",
+        title: "British Council LearnEnglish: Unit 9 - Email etiquette",
+        url: "https://learnenglish.britishcouncil.org/free-resources/business/english-emails/unit-9-email-etiquette",
+        source: "British Council LearnEnglish",
+        level: "A2-B1",
+        notes: "Email etiquette unit useful for softening professional apologies and avoiding overly direct wording.",
+        resourceFeatures: ["Email", "Exercises", "Functional Language"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "foreign-trade-english",
+    groupTitle: "Company, Product & Market",
+    topicTitle: "Introducing Your Factory",
+    resources: [
+      {
+        type: "Vocabulary Notes",
+        title: "Business English Pod: Manufacturing Vocabulary 2",
+        url: "https://www.businessenglishpod.com/2016/03/14/vv-48-business-english-vocabulary-for-manufacturing-2/",
+        source: "Business English Pod",
+        level: "A1-A2",
+        notes: "Manufacturing vocabulary lesson covering R&D, prototypes, production processes, and quality systems.",
+        resourceFeatures: ["Video", "Vocabulary", "Trade Terms"],
+        priority: "Primary"
+      },
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Quality Control 1 - Manufacturing",
+        url: "https://www.businessenglishpod.com/2024/06/23/bep-408-quality-control-1-manufacturing/",
+        source: "Business English Pod",
+        level: "A1-A2",
+        notes: "Manufacturing quality-control lesson useful for introducing factory systems and production standards.",
+        resourceFeatures: ["Audio", "Vocabulary", "Trade Terms"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "foreign-trade-english",
+    groupTitle: "Company, Product & Market",
+    topicTitle: "Product Features",
+    resources: [
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Product Presentations 2",
+        url: "https://www.businessenglishpod.com/2014/02/16/business-english-pod-246-product-presentations-2/",
+        source: "Business English Pod",
+        level: "A1-A2",
+        notes: "Product presentation lesson for moving from features to benefits and explaining product value.",
+        resourceFeatures: ["Audio", "Functional Language", "Presentation"],
+        priority: "Primary"
+      },
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Product and Vendor Requirements",
+        url: "https://www.businessenglishpod.com/2019/10/20/bep-349-english-for-purchasing-2-product-requirements-vendor-criteria/",
+        source: "Business English Pod",
+        level: "A1-A2",
+        notes: "Purchasing lesson with language for discussing design requirements, specifications, and vendor criteria.",
+        resourceFeatures: ["Audio", "Purchasing", "Trade Terms"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "foreign-trade-english",
+    groupTitle: "Company, Product & Market",
+    topicTitle: "Product Materials",
+    resources: [
+      {
+        type: "Vocabulary Notes",
+        title: "Business English Pod: Manufacturing Vocabulary 1",
+        url: "https://www.businessenglishpod.com/2016/03/08/video-vocab-47-business-english-vocabulary-manufacturing-1/",
+        source: "Business English Pod",
+        level: "A1-A2",
+        notes: "Manufacturing vocabulary lesson covering raw materials, parts, assembly lines, and finished products.",
+        resourceFeatures: ["Video", "Vocabulary", "Trade Terms"],
+        priority: "Primary"
+      },
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Shoemaking Vocabulary",
+        url: "https://www.englishclub.com/english-for-work/shoemaking-vocabulary.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Industry vocabulary page with material, colour swatch, sample, and product-component language.",
+        resourceFeatures: ["Vocabulary", "Reference", "Trade Terms"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "foreign-trade-english",
+    groupTitle: "Inquiry & Customer Development",
+    topicTitle: "Confirming Product Requirements",
+    resources: [
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Product and Vendor Requirements",
+        url: "https://www.businessenglishpod.com/2019/10/20/bep-349-english-for-purchasing-2-product-requirements-vendor-criteria/",
+        source: "Business English Pod",
+        level: "A1-A2",
+        notes: "Purchasing lesson for clarifying product specifications, technical requirements, and vendor criteria.",
+        resourceFeatures: ["Audio", "Purchasing", "Trade Terms"],
+        priority: "Primary"
+      },
+      {
+        type: "External Website",
+        title: "British Council LearnEnglish: Unit 6 - Enquiries",
+        url: "https://learnenglish.britishcouncil.org/free-resources/business/english-emails/unit-6-enquiries",
+        source: "British Council LearnEnglish",
+        level: "A1-A2",
+        notes: "Business email unit for asking for and confirming product details in enquiries.",
+        resourceFeatures: ["Email", "Exercises", "Functional Language"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "foreign-trade-english",
+    groupTitle: "Inquiry & Customer Development",
+    topicTitle: "Asking About Quantity",
+    resources: [
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Import-Export Vocabulary",
+        url: "https://www.englishclub.com/vocabulary/20_import-export.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Trade vocabulary reference with quantity, packing list, invoice, shipment, and order terms.",
+        resourceFeatures: ["Vocabulary", "Reference", "Trade Terms"],
+        priority: "Primary"
+      },
+      {
+        type: "Article",
+        title: "EnglishClub: Planning a Business Letter",
+        url: "https://www.englishclub.com/business-english/business-letters-plan.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Business writing guide for gathering exact quantities, dates, prices, and product details before replying.",
+        resourceFeatures: ["Email", "Checklist", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "foreign-trade-english",
+    groupTitle: "Quotation, Price & Negotiation",
+    topicTitle: "Explaining Price",
+    resources: [
+      {
+        type: "External Website",
+        title: "International Trade Administration: Determine Total Export Price",
+        url: "https://www.trade.gov/determine-total-export-price",
+        source: "International Trade Administration",
+        level: "A1-A2",
+        notes: "Official export reference explaining landed cost, tariffs, freight, insurance, and other pricing factors.",
+        resourceFeatures: ["Reference", "Trade Terms"],
+        priority: "Primary"
+      },
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Negotiating Price and Terms",
+        url: "https://www.businessenglishpod.com/2020/05/10/business-english-bep-358-english-for-purchasing-4-negotiating-terms-price/",
+        source: "Business English Pod",
+        level: "A1-A2",
+        notes: "Purchasing negotiation lesson with language for price comparisons, terms, delivery, and compromise.",
+        resourceFeatures: ["Audio", "Negotiation", "Trade Terms"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "foreign-trade-english",
+    groupTitle: "Quotation, Price & Negotiation",
+    topicTitle: "FOB Price",
+    resources: [
+      {
+        type: "External Website",
+        title: "International Trade Administration: Know Your Incoterms",
+        url: "https://www.trade.gov/index.php/know-your-incoterms",
+        source: "International Trade Administration",
+        level: "A1-A2",
+        notes: "Official Incoterms reference for clarifying cost, risk, and delivery responsibility in FOB-style pricing.",
+        resourceFeatures: ["Reference", "Trade Terms"],
+        priority: "Primary"
+      },
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Import-Export Vocabulary",
+        url: "https://www.englishclub.com/vocabulary/20_import-export.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Trade vocabulary list with C&F, CIF, shipping, customs, invoice, and related price-term language.",
+        resourceFeatures: ["Vocabulary", "Reference", "Trade Terms"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "foreign-trade-english",
+    groupTitle: "Quotation, Price & Negotiation",
+    topicTitle: "Discount for Bulk Orders",
+    resources: [
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Sales Vocabulary",
+        url: "https://www.englishclub.com/business-english/vocabulary_selling.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Sales vocabulary page with discount, in bulk, wholesale, buyer, customer, and deal terms.",
+        resourceFeatures: ["Vocabulary", "Reference", "Trade Terms"],
+        priority: "Primary"
+      },
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Negotiating Price and Terms",
+        url: "https://www.businessenglishpod.com/2020/05/10/business-english-bep-358-english-for-purchasing-4-negotiating-terms-price/",
+        source: "Business English Pod",
+        level: "A1-A2",
+        notes: "Negotiation lesson for proposing terms, discussing price, and suggesting a compromise.",
+        resourceFeatures: ["Audio", "Negotiation", "Trade Terms"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "foreign-trade-english",
+    groupTitle: "Samples, MOQ & Customization",
+    topicTitle: "Sample Fee",
+    resources: [
+      {
+        type: "Article",
+        title: "EnglishClub: Sample Business Letters",
+        url: "https://www.englishclub.com/business-english/correspondence-samples.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Sample correspondence index with request, information, and payment-related models teachers can adapt.",
+        resourceFeatures: ["Email", "Reference"],
+        priority: "Primary"
+      },
+      {
+        type: "Article",
+        title: "EnglishClub: Sample Request for Payment Letter",
+        url: "https://www.englishclub.com/business-english/correspondence-payment-request.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Payment request model useful for sample-fee wording and follow-up payment language.",
+        resourceFeatures: ["Email", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "foreign-trade-english",
+    groupTitle: "Samples, MOQ & Customization",
+    topicTitle: "Custom Logo",
+    resources: [
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Product and Vendor Requirements",
+        url: "https://www.businessenglishpod.com/2019/10/20/bep-349-english-for-purchasing-2-product-requirements-vendor-criteria/",
+        source: "Business English Pod",
+        level: "A1-A2",
+        notes: "Product requirements lesson useful for custom-logo, design, specification, and vendor-criteria questions.",
+        resourceFeatures: ["Audio", "Purchasing", "Trade Terms"],
+        priority: "Primary"
+      },
+      {
+        type: "Article",
+        title: "EnglishClub: Planning a Business Letter",
+        url: "https://www.englishclub.com/business-english/business-letters-plan.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Business writing guide for collecting logo size, colour, artwork, deadline, and order details.",
+        resourceFeatures: ["Email", "Checklist", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "foreign-trade-english",
+    groupTitle: "Orders, Payment & Contracts",
+    topicTitle: "Proforma Invoice",
+    resources: [
+      {
+        type: "External Website",
+        title: "International Trade Administration: Pro Forma Invoice",
+        url: "https://www.trade.gov/pro-forma-invoice",
+        source: "International Trade Administration",
+        level: "A1-A2",
+        notes: "Official export reference explaining what a pro forma invoice includes and why buyers request it.",
+        resourceFeatures: ["Reference", "Trade Terms"],
+        priority: "Primary"
+      },
+      {
+        type: "External Website",
+        title: "International Trade Administration: Common Export Documents",
+        url: "https://www.trade.gov/common-export-documents",
+        source: "International Trade Administration",
+        level: "A1-A2",
+        notes: "Official export documentation page covering pro forma invoices, commercial invoices, and packing lists.",
+        resourceFeatures: ["Reference", "Trade Terms"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "foreign-trade-english",
+    groupTitle: "Production, Quality & Packaging",
+    topicTitle: "Production Update",
+    resources: [
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Reporting on Progress",
+        url: "https://www.businessenglishpod.com/2024/12/08/bep-39c-english-for-project-management-reporting-on-progress/",
+        source: "Business English Pod",
+        level: "A1-A2",
+        notes: "Progress-reporting lesson that can support production updates about status, delays, and next steps.",
+        resourceFeatures: ["Audio", "Project Management", "Functional Language"],
+        priority: "Primary"
+      },
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Quality Control 1 - Manufacturing",
+        url: "https://www.businessenglishpod.com/2024/06/23/bep-408-quality-control-1-manufacturing/",
+        source: "Business English Pod",
+        level: "A1-A2",
+        notes: "Manufacturing lesson with quality-control language for explaining production checks and factory progress.",
+        resourceFeatures: ["Audio", "Vocabulary", "Trade Terms"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "native-phrases",
+    groupTitle: "Conversation Management",
+    topicTitle: "Changing the Topic",
+    resources: [
+      {
+        type: "Article",
+        title: "EnglishClub: How to Interrupt Politely",
+        url: "https://www.englishclub.com/efl/articles/everyday-english/how-to-interrupt-politely/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Article with polite interruption phrases that can help speakers move into a new topic smoothly.",
+        resourceFeatures: ["Functional Language", "Reference"],
+        priority: "Primary"
+      },
+      {
+        type: "Article",
+        title: "EnglishClub: Expressions for Agreeing and Disagreeing",
+        url: "https://www.englishclub.com/speaking/agreeing-disagreeing-expressions.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Discussion phrase page with interrupting and moving-on language for topic changes.",
+        resourceFeatures: ["Functional Language", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "native-phrases",
+    groupTitle: "Conversation Management",
+    topicTitle: "Ending a Conversation",
+    resources: [
+      {
+        type: "Audio Page",
+        title: "EnglishClub: Greetings in Passing",
+        url: "https://www.englishclub.com/speaking/greetings-passing.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Audio-supported greeting page with short leave-taking patterns for quick casual conversations.",
+        resourceFeatures: ["Audio", "Functional Language"],
+        priority: "Primary"
+      },
+      {
+        type: "Audio Page",
+        title: "EnglishClub: Greetings with Conversation",
+        url: "https://www.englishclub.com/speaking/greetings-conversation.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Conversation page with greeting and short exchange patterns that teachers can extend into closing practice.",
+        resourceFeatures: ["Audio", "Functional Language", "Role-play"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "native-phrases",
+    groupTitle: "Conversation Management",
+    topicTitle: "Conversation Fillers",
+    resources: [
+      {
+        type: "Article",
+        title: "EnglishClub: Filler Phrases That Give You Time",
+        url: "https://www.englishclub.com/efl/jo/vocab/filler-phrases-that-give-you-time/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Short article introducing filler phrases and hesitation devices for buying time while speaking.",
+        resourceFeatures: ["Functional Language", "Vocabulary"],
+        priority: "Primary"
+      },
+      {
+        type: "External Website",
+        title: "EnglishClub: Conversational Phrases",
+        url: "https://www.englishclub.com/ref/Conversational_Phrases/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Large conversational phrase index for finding natural fillers, responses, and short spoken chunks.",
+        resourceFeatures: ["Functional Language", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "native-phrases",
+    groupTitle: "Reactions & Emotions",
+    topicTitle: "Showing Interest",
+    resources: [
+      {
+        type: "Article",
+        title: "LearnEnglish Teens: Showing interest",
+        url: "https://learnenglishteens.britishcouncil.org/exams/speaking-exams/showing-interest",
+        source: "British Council LearnEnglish Teens",
+        level: "A1-A2",
+        notes: "Speaking page focused on phrases that show interest and encourage another speaker to continue.",
+        resourceFeatures: ["Functional Language", "Video", "Reference"],
+        priority: "Primary"
+      },
+      {
+        type: "Audio Page",
+        title: "EnglishClub: Greetings with Conversation",
+        url: "https://www.englishclub.com/speaking/greetings-conversation.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Audio conversation page with natural follow-up questions such as what's new and what have you been up to.",
+        resourceFeatures: ["Audio", "Functional Language", "Role-play"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "native-phrases",
+    groupTitle: "Reactions & Emotions",
+    topicTitle: "Showing Sympathy",
+    resources: [
+      {
+        type: "Article",
+        title: "EnglishClub: How to Express Condolences",
+        url: "https://www.englishclub.com/efl/survival/condolences/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Survival English page with careful sympathy and condolence phrases for sensitive situations.",
+        resourceFeatures: ["Functional Language", "Reference"],
+        priority: "Primary"
+      },
+      {
+        type: "External Website",
+        title: "EnglishClub: Conversational Phrases - I",
+        url: "https://www.englishclub.com/ref/Conversational_Phrases/I/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Conversational phrase index including I'm sorry for your loss, I'm so sorry, and related response phrases.",
+        resourceFeatures: ["Functional Language", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "native-phrases",
+    groupTitle: "Opinions & Discussion",
+    topicTitle: "Partly Agreeing",
+    resources: [
+      {
+        type: "Article",
+        title: "EnglishClub: How to Disagree Politely",
+        url: "https://www.englishclub.com/efl/articles/everyday-english/how-to-disagree-politely/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Article with partly agree, agree up to a point, and soft disagreement phrase patterns.",
+        resourceFeatures: ["Functional Language", "Reference"],
+        priority: "Primary"
+      },
+      {
+        type: "Article",
+        title: "EnglishClub: Agreeing and Disagreeing in English",
+        url: "https://www.englishclub.com/speaking/agreeing-disagreeing.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Speaking guide for agreement levels and disagreement, useful for teaching partial agreement.",
+        resourceFeatures: ["Functional Language", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "native-phrases",
+    groupTitle: "Opinions & Discussion",
+    topicTitle: "Explaining Reasons",
+    resources: [
+      {
+        type: "Article",
+        title: "EnglishClub: Expressions for Agreeing and Disagreeing",
+        url: "https://www.englishclub.com/speaking/agreeing-disagreeing-expressions.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Discussion phrase page with opinion starters that pair naturally with because and reason-giving language.",
+        resourceFeatures: ["Functional Language", "Reference"],
+        priority: "Primary"
+      },
+      {
+        type: "External Website",
+        title: "EnglishClub: Asking for Opinions",
+        url: "https://www.englishclub.com/vocabulary/fl-asking-for-opinions.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Functional-language page for asking opinions and prompting speakers to explain their reasons.",
+        resourceFeatures: ["Functional Language", "Vocabulary"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "native-phrases",
+    groupTitle: "Suggestions, Requests & Refusals",
+    topicTitle: "Asking for a Favor",
+    resources: [
+      {
+        type: "Article",
+        title: "EnglishClub: How to Make Requests in English",
+        url: "https://www.englishclub.com/efl/articles/everyday-english/requests/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Request-language article with could you, would you, and indirect phrases for asking favors politely.",
+        resourceFeatures: ["Functional Language", "Reference"],
+        priority: "Primary"
+      },
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Ask a favour",
+        url: "https://www.englishclub.com/ref/esl/Collocations/A/ask_a_favour_4047.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Short collocation reference for can I ask a favour and related favor-request language.",
+        resourceFeatures: ["Vocabulary", "Reference", "Quiz"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "native-phrases",
+    groupTitle: "Suggestions, Requests & Refusals",
+    topicTitle: "Refusing a Request",
+    resources: [
+      {
+        type: "Article",
+        title: "EnglishClub: How to Make Requests in English",
+        url: "https://www.englishclub.com/efl/articles/everyday-english/requests/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Request article useful for understanding how to respond to and soften request exchanges.",
+        resourceFeatures: ["Functional Language", "Reference"],
+        priority: "Primary"
+      },
+      {
+        type: "Article",
+        title: "EnglishClub: How to Practise Offers and Requests",
+        url: "https://www.englishclub.com/efl/tefl/functional/practise-offers-requests/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Teacher-facing practice article with response phrases for turning down offers and requests.",
+        resourceFeatures: ["Teacher Notes", "Functional Language"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "native-phrases",
+    groupTitle: "Politeness & Softening",
+    topicTitle: "Softening Direct Requests",
+    resources: [
+      {
+        type: "Article",
+        title: "EnglishClub: How to Make Requests in English",
+        url: "https://www.englishclub.com/efl/articles/everyday-english/requests/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Detailed request article showing how to make direct requests longer, softer, and more polite.",
+        resourceFeatures: ["Functional Language", "Reference"],
+        priority: "Primary"
+      },
+      {
+        type: "External Website",
+        title: "British Council LearnEnglish: Unit 9 - Email etiquette",
+        url: "https://learnenglish.britishcouncil.org/free-resources/business/english-emails/unit-9-email-etiquette",
+        source: "British Council LearnEnglish",
+        level: "A1-A2",
+        notes: "Email etiquette unit for identifying direct wording and choosing softer, more polite alternatives.",
+        resourceFeatures: ["Email", "Exercises", "Functional Language"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "native-phrases",
+    groupTitle: "Politeness & Softening",
+    topicTitle: "Gentle Reminders",
+    resources: [
+      {
+        type: "Article",
+        title: "EnglishClub: Planning a Business Letter",
+        url: "https://www.englishclub.com/business-english/business-letters-plan.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Business writing guide for polite reminders that include a clear purpose, deadline, and requested response.",
+        resourceFeatures: ["Email", "Checklist", "Reference"],
+        priority: "Primary"
+      },
+      {
+        type: "Article",
+        title: "EnglishClub: What Your Students Need To Know About Emailing",
+        url: "https://www.englishclub.com/efl/tefl/skills/emailing/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Teacher-facing email article with useful advice on formality and tone for short reminder messages.",
+        resourceFeatures: ["Teacher Notes", "Email", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "native-phrases",
+    groupTitle: "Workplace Native Phrases",
+    topicTitle: "Saying You Are Busy",
+    resources: [
+      {
+        type: "Audio Page",
+        title: "Business English Pod: Routine Check-in Meeting",
+        url: "https://www.businessenglishpod.com/2022/02/13/bep-383-business-by-phone-3-routine-check-in-meeting/",
+        source: "Business English Pod",
+        level: "A1-A2",
+        notes: "Routine check-in lesson with language for workload, challenges, and asking for time to discuss issues.",
+        resourceFeatures: ["Audio", "Telephone", "Functional Language"],
+        priority: "Secondary"
+      },
+      {
+        type: "External Website",
+        title: "EnglishClub: Conversational Phrases - I",
+        url: "https://www.englishclub.com/ref/Conversational_Phrases/I/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Conversational phrase index with I'm afraid and related softening phrases for busy or unavailable replies.",
+        resourceFeatures: ["Functional Language", "Reference"],
+        priority: "Primary"
+      }
+    ]
   }
 ];
 
-const curatedExternalResources = curatedResourceBatches.flatMap((batch) =>
+const version33ResourceBatches = [
+  {
+    categorySlug: "speaking-topics",
+    groupTitle: "Daily Life & Routine",
+    topicTitle: "Daily Habits",
+    resources: [
+      {
+        type: "Vocabulary Notes",
+        title: "British Council LearnEnglish: Daily routine",
+        url: "https://learnenglish.britishcouncil.org/free-resources/vocabulary/a1-a2/daily-routine",
+        source: "British Council LearnEnglish",
+        level: "A1-A2",
+        notes: "Interactive daily routine vocabulary practice for habit, time, and everyday activity language.",
+        resourceFeatures: ["Vocabulary", "Exercises"],
+        priority: "Primary"
+      },
+      {
+        type: "ESL Listening Website",
+        title: "Randall's ESL Cyber Listening Lab: Daily Schedule",
+        url: "https://www.esl-lab.com/easy/daily-schedule/",
+        source: "Randall's ESL Cyber Listening Lab",
+        level: "A1-A2",
+        notes: "Listening activity with routine details, comprehension questions, and transcript support for daily-habit speaking.",
+        resourceFeatures: ["Audio", "Quiz", "Transcript"],
+        priority: "Primary"
+      }
+    ]
+  },
+  {
+    categorySlug: "speaking-topics",
+    groupTitle: "Daily Life & Routine",
+    topicTitle: "Weekend Routine",
+    resources: [
+      {
+        type: "ESL Listening Website",
+        title: "ELLLO: What do you do on the weekend?",
+        url: "https://elllo.org/video/A2BEG/A2-008-NERRY-WHAT-DO-WEEKEND.htm",
+        source: "ELLLO",
+        level: "A1-A2",
+        notes: "Short A2 weekend-routine listening page with script, quiz, vocabulary, and grammar support.",
+        resourceFeatures: ["Audio", "Script", "Quiz", "Vocabulary"],
+        priority: "Primary"
+      },
+      {
+        type: "Article",
+        title: "EnglishClub: Adverbs of Frequency",
+        url: "https://www.englishclub.com/grammar/adverbs-frequency.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Clear grammar reference for saying how often learners do weekend activities.",
+        resourceFeatures: ["Grammar", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "speaking-topics",
+    groupTitle: "Family, Friends & Relationships",
+    topicTitle: "Talking About Friends",
+    resources: [
+      {
+        type: "Audio Page",
+        title: "EnglishClub: Greetings with Conversation",
+        url: "https://www.englishclub.com/speaking/greetings-conversation.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Audio-supported conversation page with phrases for greeting friends and asking what is new.",
+        resourceFeatures: ["Audio", "Functional Language", "Role-play"],
+        priority: "Primary"
+      },
+      {
+        type: "Article",
+        title: "LearnEnglish Teens: Showing interest",
+        url: "https://learnenglishteens.britishcouncil.org/exams/speaking-exams/showing-interest",
+        source: "British Council LearnEnglish Teens",
+        level: "A1-A2",
+        notes: "Speaking support page for showing interest when a friend talks about life, plans, or opinions.",
+        resourceFeatures: ["Functional Language", "Video", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "speaking-topics",
+    groupTitle: "Food, Drinks & Restaurants",
+    topicTitle: "Talking About Taste",
+    resources: [
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: The Vocabulary of Food",
+        url: "https://www.englishclub.com/vocabulary/food.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Food vocabulary reference with taste adjectives, dish words, and eating-out terms.",
+        resourceFeatures: ["Vocabulary", "Reference", "Quiz"],
+        priority: "Primary"
+      },
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Food and Beverage Vocabulary",
+        url: "https://www.englishclub.com/english-for-work/food-drink-vocabulary.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Restaurant and food-service vocabulary page with taste, menu, ingredient, and service terms.",
+        resourceFeatures: ["Vocabulary", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "speaking-topics",
+    groupTitle: "Food, Drinks & Restaurants",
+    topicTitle: "Paying the Bill",
+    resources: [
+      {
+        type: "Article",
+        title: "EnglishClub: Restaurant English",
+        url: "https://www.englishclub.com/efl/survival/restaurant-english/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Survival English page covering bills, receipts, tipping, and restaurant problem language.",
+        resourceFeatures: ["Audio", "Functional Language", "Reference"],
+        priority: "Primary"
+      },
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Food and Beverage Vocabulary",
+        url: "https://www.englishclub.com/english-for-work/food-drink-vocabulary.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Food-service vocabulary page with cashier, debit card, change, bill, and payment-related terms.",
+        resourceFeatures: ["Vocabulary", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "speaking-topics",
+    groupTitle: "Shopping, Money & Services",
+    topicTitle: "Online Shopping",
+    resources: [
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Internet Terms",
+        url: "https://www.englishclub.com/vocabulary/internet.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Internet vocabulary glossary with e-commerce, buttons, forms, links, and online-action language.",
+        resourceFeatures: ["Vocabulary", "Reference"],
+        priority: "Primary"
+      },
+      {
+        type: "Article",
+        title: "EnglishClub: Online Privacy Vocabulary",
+        url: "https://www.englishclub.com/efl/articles/vocabulary/online-privacy-vocabulary/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Vocabulary article for privacy, tracking, cookies, and online-shopping safety discussions.",
+        resourceFeatures: ["Vocabulary", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "speaking-topics",
+    groupTitle: "Shopping, Money & Services",
+    topicTitle: "Customer Service Problems",
+    resources: [
+      {
+        type: "External Website",
+        title: "EnglishClub: Customer Service for Cashiers",
+        url: "https://www.englishclub.com/english-for-work/cashier-customer-service.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Customer-service language page with polite cashier phrases, apologies, and practical service interactions.",
+        resourceFeatures: ["Functional Language", "Role-play"],
+        priority: "Primary"
+      },
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Cashier Vocabulary",
+        url: "https://www.englishclub.com/english-for-work/cashier-vocabulary.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Retail vocabulary reference covering returns, damaged items, adjustments, receipts, and customer service.",
+        resourceFeatures: ["Vocabulary", "Reference", "Quiz"],
+        priority: "Primary"
+      }
+    ]
+  },
+  {
+    categorySlug: "speaking-topics",
+    groupTitle: "Work, Jobs & Study",
+    topicTitle: "Talking About Your Company",
+    resources: [
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Company Vocabulary",
+        url: "https://www.englishclub.com/business-english/vocabulary-company.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Company vocabulary page for departments, headquarters, managers, and basic organization descriptions.",
+        resourceFeatures: ["Vocabulary", "Reference"],
+        priority: "Primary"
+      },
+      {
+        type: "External Website",
+        title: "EnglishClub: Business English",
+        url: "https://www.englishclub.com/business-english/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Business English index with company, meetings, correspondence, and workplace vocabulary sections.",
+        resourceFeatures: ["Reference", "Vocabulary"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "speaking-topics",
+    groupTitle: "Work, Jobs & Study",
+    topicTitle: "Work-Life Balance",
+    resources: [
+      {
+        type: "Article",
+        title: "British Council LearnEnglish: Work-life balance",
+        url: "https://learnenglish.britishcouncil.org/free-resources/reading/b2/work-life-balance",
+        source: "British Council LearnEnglish",
+        level: "A1-A2",
+        notes: "Reading page teachers can simplify for speaking about hours, commuting, family time, and flexible work.",
+        resourceFeatures: ["Reading", "Exercises", "Vocabulary"],
+        priority: "Secondary"
+      },
+      {
+        type: "Article",
+        title: "British Council LearnEnglish: Flexible working",
+        url: "https://learnenglish.britishcouncil.org/business-english/business-magazine/flexible-working",
+        source: "British Council LearnEnglish",
+        level: "A1-A2",
+        notes: "Business magazine article useful for guided discussion about remote work and balancing personal life.",
+        resourceFeatures: ["Reading", "Vocabulary", "Discussion"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "speaking-topics",
+    groupTitle: "Health, Body & Lifestyle",
+    topicTitle: "Seeing a Doctor",
+    resources: [
+      {
+        type: "Audio Page",
+        title: "EnglishClub: How To Go to a Walk-in Clinic",
+        url: "https://www.englishclub.com/efl/survival/walk-in-clinic/",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Audio-supported survival page for reception, symptoms, doctor questions, and pharmacy follow-up.",
+        resourceFeatures: ["Audio", "Functional Language", "Vocabulary"],
+        priority: "Primary"
+      },
+      {
+        type: "Vocabulary Notes",
+        title: "Randall's ESL Cyber Listening Lab: Doctor's Office Vocabulary",
+        url: "https://www.esl-lab.com/vocabulary-lessons/doctors-office/",
+        source: "Randall's ESL Cyber Listening Lab",
+        level: "A1-A2",
+        notes: "Doctor's office vocabulary page with audio support and quiz practice for medical appointment language.",
+        resourceFeatures: ["Audio", "Vocabulary", "Quiz"],
+        priority: "Primary"
+      }
+    ]
+  },
+  {
+    categorySlug: "speaking-topics",
+    groupTitle: "Feelings, Opinions & Personality",
+    topicTitle: "Comparing Choices",
+    resources: [
+      {
+        type: "External Website",
+        title: "British Council LearnEnglish: Comparative adjectives",
+        url: "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/comparative-adjectives",
+        source: "British Council LearnEnglish",
+        level: "A1-A2",
+        notes: "A1-A2 grammar page for comparing two choices with clearer, cheaper, better, or more interesting.",
+        resourceFeatures: ["Grammar", "Exercises"],
+        priority: "Primary"
+      },
+      {
+        type: "External Website",
+        title: "British Council LearnEnglish: Modifying comparatives",
+        url: "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/modifying-comparatives",
+        source: "British Council LearnEnglish",
+        level: "A1-A2",
+        notes: "Extension reference teachers can simplify for saying a little better, much cheaper, or almost the same.",
+        resourceFeatures: ["Grammar", "Reference"],
+        priority: "Secondary"
+      }
+    ]
+  },
+  {
+    categorySlug: "speaking-topics",
+    groupTitle: "Plans, Events & Social Life",
+    topicTitle: "Accepting an Invitation",
+    resources: [
+      {
+        type: "ESL Listening Website",
+        title: "British Council LearnEnglish: An invitation to a party",
+        url: "https://learnenglish.britishcouncil.org/free-resources/listening/a2/invitation-party",
+        source: "British Council LearnEnglish",
+        level: "A1-A2",
+        notes: "A2 invitation listening page with phone messages, directions, and response-friendly social context.",
+        resourceFeatures: ["Audio", "Transcript", "Exercises"],
+        priority: "Primary"
+      },
+      {
+        type: "Vocabulary Notes",
+        title: "EnglishClub: Accept an invitation",
+        url: "https://www.englishclub.com/ref/esl/Collocations/A/accept_an_invitation_3251.php",
+        source: "EnglishClub",
+        level: "A1-A2",
+        notes: "Short collocation reference for accepting invitations and confirming that you agree to go.",
+        resourceFeatures: ["Vocabulary", "Reference", "Quiz"],
+        priority: "Secondary"
+      }
+    ]
+  }
+];
+
+const allCuratedResourceBatches = [...curatedResourceBatches, ...version33ResourceBatches];
+
+const curatedExternalResources = allCuratedResourceBatches.flatMap((batch) =>
   batch.resources.map((item) =>
     resource(topicId(batch.categorySlug, batch.groupTitle, batch.topicTitle), {
       isLocal: false,
@@ -2533,8 +4431,13 @@ const curatedExternalResources = curatedResourceBatches.flatMap((batch) =>
   )
 );
 
+// Keep existing resource IDs stable by appending later curated batches after the current records.
+const stableCuratedResourceCount = 120;
+const legacyCuratedExternalResources = curatedExternalResources.slice(0, stableCuratedResourceCount);
+const incrementalCuratedExternalResources = curatedExternalResources.slice(stableCuratedResourceCount);
+
 const selectedCuratedTopicIds = new Set(
-  curatedResourceBatches.map((batch) => topicId(batch.categorySlug, batch.groupTitle, batch.topicTitle))
+  allCuratedResourceBatches.map((batch) => topicId(batch.categorySlug, batch.groupTitle, batch.topicTitle))
 );
 
 const resources = [
@@ -2769,7 +4672,7 @@ const resources = [
     priority: "Supplement",
     resourceFeatures: ["Templates"]
   }),
-  ...curatedExternalResources,
+  ...legacyCuratedExternalResources,
   resource(topicId("listening-courses", "Daily Life Listening", "Self-introduction Listening"), {
     type: "ESL Listening Website",
     title: "British Council LearnEnglish: Meeting other students",
@@ -3176,7 +5079,8 @@ const resources = [
     isLocal: false,
     resourceFeatures: ["Pre-listening", "Audio", "Quiz", "Transcript", "Vocabulary"],
     priority: "Secondary"
-  })
+  }),
+  ...incrementalCuratedExternalResources
 ]
   .filter(
     (resourceItem) =>
